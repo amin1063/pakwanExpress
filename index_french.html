@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pakwan Express - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo white.PNG" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QNxDbF/bzmsB37q6g5ZfhMbxnQ2ePd2p+taLR7kVQa+mC0XxYwb6hQgNP/ci2OeVHVWO6wWvJ5T47XX6slqIkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="px-1 d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center">
+            <span><a href="tel:+15142700050" style="font-size: 0.7rem;">+15142700050</a></span>
+        </i>
+        <i class="bi bi-clock d-flex align-items-center " style="margin-left: 11px;">
+          <span style="font-size: 0.7rem;">Lun-Dim : 12h - 2h du matin</span>
+        </i>
+    </div>
+ 
+    <div class="languages d-md-flex align-items-center" style="margin-left: 13px;" >
+      <ul>
+        <li id="toggleEn" ><a href="" style="font-size: 0.7rem;">En</a></li>
+        <li id="toggleDe" class="active"><a href="#" style="font-size: 0.7rem;">De</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    // Get references to the toggle buttons
+    const toggleEn = document.getElementById('toggleEn');
+    const toggleDe = document.getElementById('toggleDe');
+  
+    // Function to handle toggling and page redirection
+    function toggleLanguage(event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+  
+      // Get references to all language buttons
+      const buttons = document.querySelectorAll('.languages li');
+  
+      // Remove active class from all buttons
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+  
+      // Toggle active class on the clicked button
+      event.currentTarget.classList.add('active');
+  
+      // Redirect to the corresponding page
+      if (event.target.parentElement.id === 'toggleEn') {
+        console.log('Redirecting to index_backup2.html');
+        window.location.href = 'index_backup2.html';
+      } else if (event.target.parentElement.id === 'toggleDe') {
+        console.log('Redirecting to index_french.html');
+        window.location.href = 'index_french.html';
+      }
+    }
+  
+    // Add click event listeners to the toggle buttons
+    toggleEn.addEventListener('click', toggleLanguage);
+    toggleDe.addEventListener('click', toggleLanguage);
+  </script>
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center white-h fw-bold" style="font-family:sans-serif;">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div style="text-align: end;">
+        <h1 class="logo me-auto me-lg-0 fw-bold"><a href="index.html">Pakwan Express </a></h1>
+        <img src="/assets/img/pngwing.com.png" class="halal-logo">
+      </div>
+      <img src="./assets/img/logo white.PNG" alt="" class="logo-img">
+      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+ <nav id="navbar" class="navbar order-last order-lg-0">
+  <ul>
+    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+    <li><a class="nav-link scrollto" href="#about">À propos</a></li>
+    <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+    <li><a class="nav-link scrollto" href="#specials">Spécialités</a></li>
+    <!-- <li><a class="nav-link scrollto" href="#events">Événements</a></li> -->
+    <!-- <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li> -->
+    <li><a class="nav-link scrollto" href="#gallery">Galerie</a></li>
+    <!-- <li class="dropdown"><a href="#"><span>Menu déroulant</span> <i class="bi bi-chevron-down"></i></a>
+      <ul>
+        <li><a href="#">Menu déroulant 1</a></li>
+        <li class="dropdown"><a href="#"><span>Sous-menu déroulant</span> <i class="bi bi-chevron-right"></i></a>
+          <ul>
+            <li><a href="#">Sous-menu déroulant 1</a></li>
+            <li><a href="#">Sous-menu déroulant 2</a></li>
+            <li><a href="#">Sous-menu déroulant 3</a></li>
+            <li><a href="#">Sous-menu déroulant 4</a></li>
+            <li><a href="#">Sous-menu déroulant 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu déroulant 2</a></li>
+        <li><a href="#">Menu déroulant 3</a></li>
+        <li><a href="#">Menu déroulant 4</a></li>
+      </ul>
+    </li> -->
+    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+  </ul>
+  <i class="bi bi-list mobile-nav-toggle"></i>
+</nav><!-- .navbar -->
+<a href="https://www.instagram.com/pakwanexpressmontreal/" target="_blank" class="position-relative animated tada infinite">
+  <img src="./assets/img/instgram_logo.png" alt="-" style="height: 40px;width: 40px;">
+</a>
+
+    </div>
+  </header><!-- End Header -->
+
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+  <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+    <div class="row">
+      <div class="col-lg-8 ">
+        <h1>Bienvenue chez <span>Pakwan Express</span></h1>
+ 
+        <h2  class="percent">Notre nourriture est notre identité culturelle !</h2>
+        <div class="btns percent" >
+          <a href="#menu"  class="btn-menu animated fadeInUp scrollto" style="margin-right: 10px;">Menu <i class="fa fa-spoon" style="font-size: 20px; color: rgb(255, 255, 255);"></i></a>
+          <a href="https://wa.me/+15142700050" class="btn-menu animated fadeInUp scrollto">
+            Réserver une table
+            <i class="fa fa-whatsapp"target="_blank" style="font-size: 20px; color: green;"></i>
+          </a>
+      </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
+      data-aos-delay="200">
+      <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="glightbox play-btn mt-4"></a>
+    </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Bienvenue chez Pakwan Express</h3>
+            <p class="fst-italic">
+                Laissez-vous emporter dans un voyage culinaire qui titille vos papilles et enchante vos sens.
+            </p>
+            <ul>
+                <li><i class="bi bi-check-circle"></i> Découvrez les saveurs authentiques de la cuisine traditionnelle hyderabadi, élaborées avec soin et expertise.</li>
+                <li><i class="bi bi-check-circle"></i> Plongez-vous dans notre ambiance vibrante et accueillante, parfaite pour des repas décontractés ou des occasions spéciales.</li>
+                <li><i class="bi bi-check-circle"></i> Savourez chaque bouchée en sachant que chaque plat est préparé avec les ingrédients les plus frais et la maîtrise culinaire.</li>
+            </ul>
+            <p>
+                Chez Pakwan Express, nous nous engageons à vous offrir une expérience culinaire inoubliable. Que vous dégustiez nos biryanis signature, nos kebabs succulents ou nos desserts indulgents, chaque moment passé avec nous est une célébration de la saveur et de la culture. Rejoignez-nous et découvrez pourquoi Pakwan Express est votre destination ultime pour une cuisine hyderabadi authentique.
+            </p>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Pourquoi nous choisir</h2>
+            <p>Découvrez les raisons de dîner dans notre restaurant</p>
+      </div>
+      
+      <div class="row">
+      
+          <div class="col-lg-4">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                  <span>01</span>
+                  <h4>Cuisine authentique hyderabadi</h4>
+                  <p>Embarquez pour un voyage culinaire à travers les saveurs de Hyderabad, où chaque plat est élaboré avec authenticité et passion.</p>
+              </div>
+          </div>
+      
+          <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                  <span>02</span>
+                  <h4>Expérience culinaire exquise</h4>
+<p>Plongez-vous dans une ambiance qui reflète la chaleur et l'hospitalité de Hyderabad, créant des expériences culinaires mémorables pour tous.</p>
+              </div>
+          </div>
+      
+          <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                  <span>03</span>
+                  <h4>Fraîcheur & Qualité</h4>
+                  <p>Laissez-vous tenter par des plats préparés avec les ingrédients les plus frais et l'expertise culinaire, garantissant que chaque bouchée soit une explosion de saveur et de satisfaction.</p>
+              </div>
+          </div>
+      </div>
+      
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+  <!-- ======= Menu Section ======= -->
+  <section id="menu" class="menu section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Menu</h2>
+        <p>Découvrez notre délicieux menu</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <a href="items">
+            <ul id="menu-flters">
+
+                <li data-filter="*" class="filter-active">Tout</li>
+                <li data-filter=".filter-vegetarian">Végétarien</li>
+                <li data-filter=".filter-non-vegetarian">Non végétarien</li>
+                <li data-filter=".filter-platerr">Assiette</li>
+                <li data-filter=".filter-snacks">Attrapez et partez / Collations</li>
+                <li data-filter=".filter-App_Non_veg">Apéritif (Non Veg)</li>
+                <li data-filter=".filter-Curries">Currys (Non Veg)</li>
+                <li data-filter=".filter-Veg">Apéritif (Veg)</li>
+                <li data-filter=".filter-Veg_special">Currys (Veg)</li>
+                <li data-filter=".filter-Rice_Nonveg">Riz (Non Veg)</li>
+                <li data-filter=".filter-Rice_veg">Riz (Veg)</li>
+                <li data-filter=".filter-Chinese_work">Wok chinois</li>
+                <li data-filter=".filter-Desserts">Desserts</li>
+                <li data-filter=".filter-Mocktail_shot">Shot Mocktail</li>
+                <li data-filter=".filter-Pakwan_special">Spécialités Pakwan</li>
+                <li data-filter=".filter-Salads">Salades</li>
+                <li data-filter=".filter-Drinks">Boissons/ accompagnements</li>
+                <li data-filter=".filter-Naan_paratha">Naan/Paratha</li>
+          </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="menu-swiper-container">
+          <div class="menu-swiper-wrapper">
+            <!-- Repeat this structure for each menu item -->
+            <!-- Start of a slide -->
+            <div class="menu-swiper-slide">
+              <div class="slideshow-container" id="items" 
+              >
+              <!-- id="items" -->
+                <!-- platter -->
+                <!-- Product: Kebab Platerr -->
+                <div class="col-lg-6 menu-item filter-platerr filter-non-vegetarian" onclick="showProductDetails('Assiette de kebabs', '$54.99', 'Sheesha Kebab, Poulet tandoori, Poulet 65, 2 Tandoori Roti (servis avec salade)', 'assets/img/menu/kebab_plater(combined).jpg', event)">
+                    <img src="assets/img/menu/kebab_plater(combined).jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                        <a href="#">Assiette de kebabs</a><span>$54.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Sheesha Kebab, Poulet tandoori, Poulet 65, 2 Tandoori Roti (servis avec salade)
+                    </div>
+                </div>
+              <!-- </div> -->
+                <!-- Product: Special Biryani Kebab Platerr -->
+                <div class="col-lg-6 menu-item filter-platerr filter-non-vegetarian "
+                onclick="showProductDetails('Plateau spécial Biryani poulet/agneau Kebab', '54.99/64.99', 'Sheesha Kebab 2 pcs, demi-poulet Tandoori, poulet 65, 2 Roti Tandoori servis avec salade, mirchi salan et chutney de dahi', 'assets/img/menu/kebab_plater(2.combined).jpg', event)">
+                <img src="assets/img/menu/kebab_plater(2.combined).jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Plateau spécial Biryani poulet/agneau Kebab</a><span>54,99 $/64,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                  Sheesha Kebab 2 pcs, demi-poulet Tandoori, poulet 65, 2 Roti Tandoori servis avec salade, mirchi salan et chutney de dahi
+                </div>
+              </div>
+
+
+                <!-- Snacks -->
+                <div class="col-lg-6 menu-item filter-snacks filter-vegetarian"
+                onclick="showProductDetails('Lukmi', '3,99 $', 'Pâtisserie traditionnelle farcie au Dum Keema et servie avec du chutney', 'assets/img/menu/1.(1)_Lukmi_keema.jpg', event)">
+                <img src="assets/img/menu/1.(1)_Lukmi_keema.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Lukmi</a><span>3,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                  Pâtisserie traditionnelle farcie au Dum Keema et servie avec du chutney
+                </div>
+              </div>
+              <div class="col-lg-6 menu-item filter-snacks filter-vegetarian"
+                onclick="showProductDetails('Samosa', '2,99 $', 'Samosa végétarien servi avec du chutney', 'assets/img/menu/1.(2)Veg_Samosa.jpg', event)">
+                <img src="assets/img/menu/1.(2)Veg_Samosa.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Samosa</a><span>2,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                  Samosa végétarien servi avec du chutney
+                </div>
+              </div>
+
+              <div class="col-lg-6 menu-item filter-snacks filter-non-vegetarian"
+              onclick="showProductDetails('Wrap grillé au poulet 65', '7,99 $', 'Poulet 65 enveloppé dans du pain moelleux avec salade et fromage', 'assets/img/menu/1.(3)Chicken_65_Dish.jpg', event)">
+              <img src="assets/img/menu/1.(3)Chicken_65_Dish.jpg" class="menu-img" style="height: 68px;" alt="">
+              <div class="menu-content">
+                <a href="#">Wrap grillé au poulet 65</a><span>7,99 $</span>
+              </div>
+              <div class="menu-ingredients">
+                Poulet 65 enveloppé dans du pain moelleux avec salade et fromage
+              </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-snacks filter-non-vegetarian"
+              onclick="showProductDetails('Sandwich grillé au poulet', '8,99 $', 'Poitrine de poulet grillée servie entre des tranches de pain toastées avec de la laitue fraîche, des tomates et de la mayonnaise', 'assets/img/menu/1.(4)chicken_grilled.jpg', event)">
+              <img src="assets/img/menu/1.(4)chicken_grilled.jpg" class="menu-img" style="height: 68px;" alt="">
+              <div class="menu-content">
+                <a href="#">Sandwich grillé au poulet</a><span>8,99 $</span>
+              </div>
+              <div class="menu-ingredients">
+                Poitrine de poulet grillée servie entre des tranches de pain toastées avec de la laitue fraîche, des tomates et de la mayonnaise
+              </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-snacks filter-vegetarian"
+            onclick="showProductDetails('Sandwich grillé végétarien', '6,99 $', 'Légumes variés grillés à la perfection et servis entre des tranches de pain toastées avec du fromage et de la mayonnaise', 'assets/img/menu/1.(5)Veg_Sandwitch.jpg', event)">
+            <img src="assets/img/menu/1.(5)Veg_Sandwitch.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+              <a href="#">Sandwich grillé végétarien</a><span>6,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+              Légumes variés grillés à la perfection et servis entre des tranches de pain toastées avec du fromage et de la mayonnaise
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-snacks filter-vegetarian"
+          onclick="showProductDetails('Frites', '3,99 $/4,99 $/5,99 $', 'Petite, Moyenne, Grande', 'assets/img/menu/1.snakes_fries(new).jpg', event)">
+          <img src="assets/img/menu/1.snakes_fries(new).jpg" class="menu-img" style="height: 68px;" alt="">
+          <div class="menu-content">
+            <a href="#">Frites</a><span>3,99 $/4,99 $/5,99 $</span>
+          </div>
+          <div class="menu-ingredients">
+           Petite, Moyenne, Grande
+          </div>
+        </div>
+
+
+                <!-- Appitizer Non Veg -->
+
+                <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                onclick="showProductDetails('Poulet tandoori', '7,99 $/16,99 $', 'Morceaux de poulet tendres marinés à la perfection, sautés avec un mélange d\'oignons, de gingembre et d\'ail, finis avec un filet de jus de citron', 'assets/img/menu/2.(6)tandoori_chicken.jpg', event)">
+                <img src="assets/img/menu/2.(6)tandoori_chicken.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Poulet tandoori</a><span>7,99 $/16,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                  Morceaux de poulet tendres marinés à la perfection, sautés avec un mélange d'oignons, de gingembre et d'ail, finis avec un filet de jus de citron
+                </div>
+              </div>
+
+<div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+    onclick="showProductDetails('Chicken Lollipop', '12,99 $', 'Cuisses de poulet marinées dans des épices, enrobées de beurre zesté, frites et servies avec une sauce à l\'ail épicée.', 'assets/img/menu/2.(7)chicken_lolipop.jpg', event)">
+    <img src="assets/img/menu/2.(7)chicken_lolipop.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+      <a href="#">Chicken Lollipop</a><span>12,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+      Cuisses de poulet marinées dans des épices, enrobées de beurre zesté, frites et servies avec une sauce à l'ail épicée.
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+  onclick="showProductDetails('Poulet sec', '10,99 $', 'Poulet tendre frit sec/mouillé, mélangé dans une sauce au yaourt épicée avec des feuilles de curry', 'assets/img/menu/2.(8)Chicken-65-Dry.jpg', event)">
+  <img src="assets/img/menu/2.(8)Chicken-65-Dry.jpg" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Poulet sec 65</a><span>10,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Poulet tendre frit sec/mouillé, mélangé dans une sauce au yaourt épicée avec des feuilles de curry
+  </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+  onclick="showProductDetails('Kebab Sheekh Hyderabadi bœuf/poulet', '9,99 $', 'Bœuf/poulet haché mariné dans de la coriandre, du poivre blanc, du cumin rôti et des oignons', 'assets/img/menu/2(9)Hyderbadi_seekh_kebab.jpg', event)">
+  <img src="assets/img/menu/2(9)Hyderbadi_seekh_kebab.jpg" class="menu-img" style="height: 68px;"
+    alt="">
+  <div class="menu-content">
+    <a href="#">Kebab Sheekh Hyderabadi bœuf/poulet</a><span>9,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Bœuf/poulet haché mariné dans de la coriandre, du poivre blanc, du cumin rôti et des oignons
+  </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+onclick="showProductDetails('Pakora de poisson', '11,99 $', 'Beignets juteux et profondément frits avec des herbes et des épices indiennes aromatiques, servis avec une chutney de coriandre et de piment maison', 'assets/img/menu/2.Fish_Pakora.jpg(new).jpg', event)">
+<img src="assets/img/menu/2.Fish_Pakora.jpg(new).jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+  <a href="#">Pakora de poisson</a><span>11,99 $</span>
+</div>
+<div class="menu-ingredients">
+  Beignets juteux et profondément frits avec des herbes et des épices indiennes aromatiques, servis avec une chutney de coriandre et de piment maison
+</div>
+</div>
+
+
+          <!-- Currys (non_veg) -->
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+  onclick="showProductDetails('Poulet Dam Ka Lagan', '9,99 $', 'Poulet rôti et cuit dans une sauce tomate aux noix de cajou', 'assets/img/menu/3.(10)Dam_ka_lagan.jpg', event)">
+  <img src="assets/img/menu/3.(10)Dam_ka_lagan.jpg" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Poulet Dam Ka Lagan</a><span>9,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Poulet rôti et cuit dans une sauce tomate aux noix de cajou
+  </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+  onclick="showProductDetails('Tikka de poulet Malai', '11,99 $', 'Poitrine de poulet désossée, marinée dans notre sauce crémeuse secrète à l\'ail', 'assets/img/menu/3.(11)chicken-malai-tikka.jpg', event)">
+  <img src="assets/img/menu/3.(11)chicken-malai-tikka.jpg" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Tikka de poulet Malai</a><span>11,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Poitrine de poulet désossée, marinée dans notre sauce crémeuse secrète à l'ail
+  </div>
+</div>
+
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+onclick="showProductDetails('Poulet au beurre', '10,99 $', 'Poulet mariné dans du yaourt et des épices, cuit dans de la purée de tomates et de la crème', 'assets/img/menu/3.(12)Butter-Chicken.jpg', event)">
+<img src="assets/img/menu/3.(12)Butter-Chicken.jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+  <a href="#">Poulet au beurre</a><span>10,99 $</span>
+</div>
+<div class="menu-ingredients">
+  Poulet mariné dans du yaourt et des épices, cuit dans de la purée de tomates et de la crème
+</div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+onclick="showProductDetails('Mouton Masala', '13,99 $', 'Délice moghol de mouton avec os cuit et mijoté dans une sauce crémeuse avec des épices traditionnelles et la saveur de cardamome', 'assets/img/menu/3.(13)Mughalai-Mutton.jpg', event)">
+<img src="assets/img/menu/3.(13)Mughalai-Mutton.jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+  <a href="#">Mouton Masala</a><span>13,99 $</span>
+</div>
+<div class="menu-ingredients">
+  Délice moghol de mouton avec os cuit et mijoté dans une sauce crémeuse avec des épices traditionnelles et la saveur de cardamome
+</div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+onclick="showProductDetails('Mouton Changezi', '17,99 $', 'Mouton cuit dans des épices fraîchement moulues avec des oignons, servi avec une sauce tomate', 'assets/img/menu/3.(14)Mutton_changezi.webp', event)">
+<img src="assets/img/menu/3.(14)Mutton_changezi.webp" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+  <a href="#">Mouton Changezi</a><span>17,99 $</span>
+</div>
+<div class="menu-ingredients">
+  Mouton cuit dans des épices fraîchement moulues avec des oignons, servi avec une sauce tomate
+</div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+  onclick="showProductDetails('Tala Hua Gosh', '10,99 $', 'Mouton désossé mariné dans un mélange maison d\'épices cuit sur une plaque avec har...', 'assets/img/menu/3.(15)Tala_hua_gosht.jpg', event)">
+  <img src="assets/img/menu/3.(15)Tala_hua_gosht.jpg" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Tala Hua Gosh</a><span>10,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Mouton désossé mariné dans un mélange maison d'épices cuit sur une plaque avec har...
+  </div>
+</div>
+
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+onclick="showProductDetails('Poulet/Mouton Karahi aux os', '14,99 $/18,99 $', 'Poulet/Mouton aromatisé avec nos épices spéciales avec des oignons et des tomates', 'assets/img/menu/3.(16)chicken-karahi.jpg', event)">
+<img src="assets/img/menu/3.(16)chicken-karahi.jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+  <a href="#">Poulet/Mouton Karahi aux os</a><span>14,99 $/18,99 $</span>
+</div>
+<div class="menu-ingredients">
+  Poulet/Mouton aromatisé avec nos épices spéciales avec des oignons et des tomates
+</div>
+</div>
+
+
+
+<div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+onclick="showProductDetails('Achari Chicken', '$10.99', 'Plat spécial de Nizam, poulet avec os fini avec une sauce au curry maison', 'assets/img/menu/3.achari_chicken(new).jpg', event)">
+<img src="assets/img/menu/3.achari_chicken(new).jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+  <a href="#">Achari Chicken</a><span>$10.99</span>
+</div>
+<div class="menu-ingredients">
+  Plat spécial de Nizam, poulet avec os fini avec une sauce au curry maison
+</div>
+</div>
+
+
+                <!-- Curries Veg -->
+                <div class="col-lg-6 menu-item filter-Veg filter-vegetarian"
+                onclick="showProductDetails('Veg Manchoria', '$8.99', 'Morceaux tendres de soja frits sautés avec du piment, de la coriandre et des oignons hachés dans une sauce manchurienne', 'assets/img/menu/2.R(1)Veg_manchoriyan.jpg', event)">
+                <img src="assets/img/menu/2.R(1)Veg_manchoriyan.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Veg Manchoria</a><span>$8.99</span>
+                </div>
+                <div class="menu-ingredients">
+                  Morceaux tendres de soja frits sautés avec du piment, de la coriandre et des oignons hachés dans une sauce manchurienne
+                </div>
+              </div>
+              
+              <div class="col-lg-6 menu-item filter-Veg filter-vegetarian"
+                onclick="showProductDetails('Baby Corn Wet', '$7.99', 'Morceaux tendres de maïs bébé frits sautés dans une sauce au yaourt épicée avec des feuilles de curry.', 'assets/img/menu/2R(2).Baby_corn.jpg', event)">
+                <img src="assets/img/menu/2R(2).Baby_corn.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Baby Corn Dry/Wet</a><span>$7.99</span>
+                </div>
+                <div class="menu-ingredients">
+                  Morceaux tendres de maïs bébé frits sautés dans une sauce au yaourt épicée avec des feuilles de curry.
+                </div>
+              </div>
+              
+              <div class="col-lg-6 menu-item filter-Veg filter-vegetarian"
+              onclick="showProductDetails('Gobi 65', '$7.99', 'Morceaux tendres de chou-fleur frits sautés dans une sauce au yaourt épicée avec des feuilles de curry', 'assets/img/menu/2.R(3)gobi-65.jpg', event)">
+              <img src="assets/img/menu/2.R(3)gobi-65.jpg" class="menu-img" style="height: 68px;" alt="">
+              <div class="menu-content">
+                <a href="#">Gobi 65</a><span>$7.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Morceaux tendres de chou-fleur frits sautés dans une sauce au yaourt épicée avec des feuilles de curry
+              </div>
+            </div>
+            
+            <!-- Veg Special  -->
+            <div class="col-lg-6 menu-item filter-Veg_special filter-vegetarian"
+              onclick="showProductDetails('Khatti Dal', '$5.99', 'Dal Masoor mijoté avec du tamarin et des herbes assaisonné avec des épices', 'assets/img/menu/3.R(1)Khatti_dal.jpeg', event)">
+              <img src="assets/img/menu/3.R(1)Khatti_dal.jpeg" class="menu-img" style="height: 68px;" alt="">
+              <div class="menu-content">
+                <a href="#">Khatti Dal</a><span>$5.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Dal Masoor mijoté avec du tamarin et des herbes assaisonné avec des épices
+              </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-Veg_special filter-vegetarian"
+            onclick="showProductDetails('Mix Veg Curry', '$6.99', 'Légumes assortis cuits dans un curry savoureux', 'assets/img/menu/3R(2)Mix_Veg_curry.jpeg', event)">
+            <img src="assets/img/menu/3R(2)Mix_Veg_curry.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mix Veg Curry</a><span>$6.99</span>
+            </div>
+            <div class="menu-ingredients">
+              Légumes assortis cuits dans un curry savoureux
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-Veg_special filter-vegetarian"
+          onclick="showProductDetails('Tamatar Ka Cut / Oeuf / Sans Oeuf', '$7.99', 'Tomates fraîches cuites avec des herbes et des épices assaisonnées à l\'ail', 'assets/img/menu/3R(3)tomato_Cut_egg.webp', event)">
+          <img src="assets/img/menu/3R(3)tomato_Cut_egg.webp" class="menu-img" style="height: 68px;" alt="">
+          <div class="menu-content">
+            <a href="#">Tamatar Ka Cut / Oeuf / Sans Oeuf</a><span>$7.99</span>
+          </div>
+          <div class="menu-ingredients">
+            Tomates fraîches cuites avec des herbes et des épices assaisonnées à l'ail
+          </div>
+        </div>
+        
+          
+          <div class="col-lg-6 menu-item filter-Veg_special filter-vegetarian"
+            onclick="showProductDetails('Paneer Majestic', '$9.99', 'Bâtonnets de paneer légèrement enrobés de beurre jaune lisse et soyeux, frits jusqu\'à ce qu\'ils soient dorés puis assaisonnés avec un tadka aux épices aromatiques et enfin enrobés de la riche sauce jaune majestueuse crémeuse', 'assets/img/menu/3.R(4)paneer-majestic.jpg', event)">
+            <img src="assets/img/menu/3.R(4)paneer-majestic.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+
+              
+              <a href="#">Paneer Majestic</a><span>$9.99</span>
+            </div>
+            <div class="menu-ingredients">
+              Bâtonnets de paneer légèrement enrobés de beurre jaune lisse et soyeux, frits jusqu'à ce qu'ils soient dorés puis assaisonnés avec un tadka aux épices aromatiques et enfin enrobés de la riche sauce jaune majestueuse crémeuse
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-Veg_special filter-vegetarian"
+          onclick="showProductDetails('Mirchi Ka Salan', '5,99 $', 'Sauce à base d\'arachides, de sésame et de noix de coco cuite lentement avec des légumes verts', 'assets/img/menu/3R(5)Mirchi-ka-salan.jpg', event)">
+          <img src="assets/img/menu/3R(5)Mirchi-ka-salan.jpg" class="menu-img" style="height: 68px;" alt="">
+          <div class="menu-content">
+            <a href="#">Mirchi Ka Salan</a><span>5,99 $</span>
+          </div>
+          <div class="menu-ingredients">
+            Sauce à base d'arachides, de sésame et de noix de coco cuite lentement avec des légumes verts
+          </div>
+        </div>
+        
+        
+        <div class="col-lg-6 menu-item filter-Veg_special filter-vegetarian"
+          onclick="showProductDetails('Lahori Chana Masala', '4,99 $', 'Pois chiches cuits dans une sauce tomate pure avec des épices traditionnelles de Lahori', 'assets/img/menu/3lahori chana masala(new).jpg', event)">
+          <img src="assets/img/menu/3lahori chana masala(new).jpg" class="menu-img" style="height: 68px;" alt="">
+          <div class="menu-content">
+            <a href="#">Lahori Chana Masala</a><span>4,99 $</span>
+          </div>
+          <div class="menu-ingredients">
+            Pois chiches cuits dans une sauce tomate pure avec des épices traditionnelles de Lahori
+          </div>
+        </div>
+        
+
+
+                <!-- Non-Veg Rice -->
+                <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
+                onclick="showProductDetails('Biryani au poulet de Hyderabadi', '10,99 $', 'Biryani au poulet mondialement célèbre préparé à la manière traditionnelle Deg hyderabadi et servi', 'assets/img/menu/4.(17)Chicken-dum-Biryani.jpg', event)">
+                <img src="assets/img/menu/4.(17)Chicken-dum-Biryani.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                  <a href="#">Biryani au poulet de Hyderabadi</a><span>10,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                  Biryani au poulet mondialement célèbre préparé à la manière traditionnelle Deg hyderabadi et servi
+                </div>
+              </div>
+
+              <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
+              onclick="showProductDetails('Biryani à l&apos;agneau de Hyderabadi', '14,99 $', 'Biryani à l&apos;agneau mondialement célèbre préparé à la manière traditionnelle Deg hyderabadi et servi', 'assets/img/menu/4.(18)Mutton-dum-Biryani.jpg', event)">
+
+              <img src="assets/img/menu/4.(18)Mutton-dum-Biryani.jpg" class="menu-img" style="height: 68px;" alt="">
+              <div class="menu-content">
+                <a href="#">Biryani à l'agneau de Hyderabadi</a><span>14,99 $</span>
+              </div>
+              <div class="menu-ingredients">
+                Biryani à l'agneau mondialement célèbre préparé à la manière traditionnelle Deg hyderabadi et servi
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
+              onclick="showProductDetails('Biryani au poulet Zafran spécial de Pakwan', '22,99 $', 'Combo de Biryani au poulet Dum, Poulet 65, Naan Tandoori (2 pièces), Salan Mirchi, Chutney de Dahi', 'assets/img/menu/4.pakwan_spec_chicken_zafran.jpg', event)">
+              <img src="assets/img/menu/4.pakwan_spec_chicken_zafran.jpg" class="menu-img" style="height: 68px;" alt="">
+              <div class="menu-content">
+                <a href="#">Biryani au poulet Zafran spécial de Pakwan</a><span>22,99 $</span>
+              </div>
+              <div class="menu-ingredients">
+                Combo de Biryani au poulet Dum, Poulet 65, Naan Tandoori (2 pièces), Salan Mirchi, Chutney de Dahi
+              </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
+            onclick="showProductDetails('Biryani spécial Pakwan à l&apos;agneau Zafran', '26,99 $', 'Combo de biryani à l&apos;agneau Dum, poulet 65, naan tandoori (2 pièces), Mirchi Ka Salan, chutney de Dahi Ki', 'assets/img/menu/pakwan_sprcial_mutton_zafrani.jpg', event)">
+
+            <img src="assets/img/menu/pakwan_sprcial_mutton_zafrani.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+              <a href="#">Biryani spécial Pakwan à l'agneau Zafran</a><span>26,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+              Combo de biryani à l'agneau Dum, poulet 65, naan tandoori (2 pièces), Mirchi Ka Salan, chutney de Dahi Ki
+            </div>
+          </div>
+          
+          <!-- Veg Rice -->
+          <div class="col-lg-6 menu-item filter-Rice_veg filter-vegetarian"
+            onclick="showProductDetails('Riz Zeera', '5,99 $', 'Riz Basmati parfumé cuit avec des graines de cumin', 'assets/img/menu/4R(1)Zeera_Rice.jpg', event)">
+            <img src="assets/img/menu/4R(1)Zeera_Rice.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+              <a href="#">Riz Zeera</a><span>5,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+              Riz Basmati parfumé cuit avec des graines de cumin
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-Rice_veg filter-vegetarian"
+          onclick="showProductDetails('Riz nature', '4,99 $', 'Riz Basmati nature cuit à la vapeur', 'assets/img/menu/4.R(2)Plain_rice.jpg', event)">
+      <img src="assets/img/menu/4.R(2)Plain_rice.jpg" class="menu-img" style="height: 68px;" alt="">
+      <div class="menu-content">
+        <a href="#">Riz nature</a><span>4,99 $</span>
+      </div>
+      <div class="menu-ingredients">
+        Riz Basmati nature cuit à la vapeur
+      </div>
+    </div>
+    
+                <!-- <div class="col-lg-6 menu-item filter-Rice_veg filter-vegetarian"
+                  onclick="showProductDetails('Veg Dum Biryani', '$700', 'Flavorful basmati rice cooked with assorted vegetables and spices', 'assets/img/menu/4.R(3)Veg-Biryani.jpg', event)">
+                  <img src="assets/img/menu/4.R(3)Veg-Biryani.jpg" class="menu-img" style="height: 68px;" alt="">
+                  <div class="menu-content">
+                    <a href="#">Veg Dum Biryani</a><span>$700</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Flavorful basmati rice cooked with assorted vegetables and spices
+                  </div>
+                </div> -->
+
+                <!-- Chinese Work -->
+                <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+                onclick="showProductDetails('Soupe Poulet/Légumes', '3,99/4,99/6,99 $', 'Grains de maïs tendres et poulet en dés mijotés dans une soupe.', 'assets/img/menu/5.(21)chicken-soup-14.jpg', event)">
+            <img src="assets/img/menu/5.(21)chicken-soup-14.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+              <a href="#">Soupe Poulet/Légumes</a><span>3,99/4,99/6,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+              Grains de maïs tendres et poulet en dés mijotés dans une soupe.
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+                onclick="showProductDetails('Nouilles Poulet/Légumes', '9,99/8,99 $', 'Nouilles sautées avec des légumes et des épices, œuf, poulet.', 'assets/img/menu/5.(22)chicken_noodels.jpg', event)">
+            <img src="assets/img/menu/5.(22)chicken_noodels.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+              <a href="#">Nouilles Poulet/Légumes</a><span>9,99/8,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+              Nouilles sautées avec des légumes et des épices, œuf, poulet.
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+                onclick="showProductDetails('Riz Frit Poulet/Légumes', '9,99/8,99 $', 'Riz aromatique sauté avec du chou finement haché, des carottes, des poivrons et œuf, poulet.', 'assets/img/menu/5.(23)fried_rice.jpg', event)">
+            <img src="assets/img/menu/5.(23)fried_rice.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+              <a href="#">Riz Frit Poulet/Légumes</a><span>9,99/8,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+              Riz aromatique sauté avec du chou finement haché, des carottes, des poivrons et œuf, poulet.
+            </div>
+          </div>
+          
+
+
+          <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+      onclick="showProductDetails('Riz Frit Schezwan Poulet/Légumes', '10,99/9,99 $', 'Riz Basmati aromatisé cuit avec un masala épicé, finement haché, des carottes, des poivrons et œuf, poulet', 'assets/img/menu/5(24)schizwan_fried_rice.jpg', event)">
+  <img src="assets/img/menu/5(24)schizwan_fried_rice.jpg" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Riz Frit Schezwan Poulet/Légumes</a><span>10,99/9,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Riz Basmati aromatisé cuit avec un masala épicé, finement haché, des carottes, des poivrons et œuf, poulet
+  </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+      onclick="showProductDetails('Poulet Manchurian', '10,99 $', 'Tendres morceaux de poulet frits sautés avec du piment, de la coriandre et des oignons hachés dans une sauce manchurienne', 'assets/img/menu/5.(25)chicken-manchurian.webp', event)">
+  <img src="assets/img/menu/5.(25)chicken-manchurian.webp" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Poulet Manchurian</a><span>10,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Tendres morceaux de poulet frits sautés avec du piment, de la coriandre et des oignons hachés dans une sauce manchurienne
+  </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+      onclick="showProductDetails('Crevettes Tigre', '14,99 $', 'Crevettes enrobées de farine de maïs avec des épices', 'assets/img/menu/5.(26)tiger_prawns.jpg', event)">
+  <img src="assets/img/menu/5.(26)tiger_prawns.jpg" class="menu-img" style="height: 68px;" alt="">
+  <div class="menu-content">
+    <a href="#">Crevettes Tigre Sec/Mouillé</a><span>14,99 $</span>
+  </div>
+  <div class="menu-ingredients">
+    Crevettes enrobées de farine de maïs avec des épices
+  </div>
+</div>
+
+
+<div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
+    onclick="showProductDetails('Poulet au Piment', '10,99 $', 'Cubes de poulet frits sautés au wok, enrobés de sauce pimentée et acidulée', 'assets/img/menu/5.chill_chicken(new).jpg', event)">
+    <img src="assets/img/menu/5.chill_chicken(new).jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Poulet au Piment</a><span>10,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Cubes de poulet frits sautés au wok, enrobés de sauce pimentée et acidulée
+    </div>
+</div>
+
+<!-- Salades -->
+
+<div class="col-lg-6 menu-item filter-Salads filter-vegetarian"
+    onclick="showProductDetails('Salades Américaines', '4,99 $', 'Laitue croustillante, tomates et concombres avec une vinaigrette acidulée', 'assets/img/menu/5R(2)American_salad.jpg', event)">
+    <img src="assets/img/menu/5R(2)American_salad.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Salades Américaines</a><span>4,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Laitue croustillante, tomates et concombres avec une vinaigrette acidulée
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Salads filter-vegetarian"
+    onclick="showProductDetails('Salades Russes', '4,99 $', 'Salade russe classique avec pommes de terre, carottes et petits pois dans une sauce crémeuse', 'assets/img/menu/5.R(1)Russian_salad.jpg', event)">
+    <img src="assets/img/menu/5.R(1)Russian_salad.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Salades Russes</a><span>4,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Salade russe classique avec pommes de terre, carottes et petits pois dans une sauce crémeuse
+    </div>
+</div>
+
+                <!-- Desserts -->
+
+                <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
+                onclick="showProductDetails('Mangue Malai', '5,99 $', 'Fruits frais de saison superposés avec de la crème Malai maison aux fruits secs', 'assets/img/menu/6.(27)Mango-Malai.webp', event)">
+                <img src="assets/img/menu/6.(27)Mango-Malai.webp" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                    <a href="#">Mangue Malai</a><span>5,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                    Fruits frais de saison superposés avec de la crème Malai maison aux fruits secs
+                </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
+                onclick="showProductDetails('Dil-E-Firdaus', '5,99 $', 'Tapioca et riz grossièrement écrasé cuit dans du lait et parfumé avec du safran', 'assets/img/menu/6.(28)Dil_e_firdaus.jpg', event)">
+                <img src="assets/img/menu/6.(28)Dil_e_firdaus.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                    <a href="#">Dil-E-Firdaus</a><span>5,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                    Tapioca et riz grossièrement écrasé cuit dans du lait et parfumé avec du safran
+                </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
+                onclick="showProductDetails('Abricot Pudding', '4,99 $', 'Abricot sec cuit dans un sirop sucré garni de crème anglaise et de noix', 'assets/img/menu/6.(29)Apricot.jpg', event)">
+                <img src="assets/img/menu/6.(29)Apricot.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                    <a href="#">Pudding d'Abricot</a><span>4,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                    Abricot sec cuit dans un sirop sucré garni de crème anglaise et de noix
+                </div>
+            </div>
+            
+
+            <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
+            onclick="showProductDetails('Shahidood Malai', '5,99 $', 'Pain croustillant doré cuit dans du lait condensé à la cardamome', 'assets/img/menu/6(30).shahidood_malai.JPG', event)">
+            <img src="assets/img/menu/6(30).shahidood_malai.JPG" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+                <a href="#">Shahidood Malai</a><span>5,99 $</span>
+            </div>
+            <div class="menu-ingredients">
+                Pain croustillant doré cuit dans du lait condensé à la cardamome
+            </div>
+        </div>
+        
+        <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
+        onclick="showProductDetails('Gulab Jamuns', '9,95 $', 'Pâtisserie de lait frit traditionnelle servie dans du sirop de miel à leau de rose', 'assets/img/menu/6.(31)gulab-jamuns.jpg', event)">
+
+            <img src="assets/img/menu/6.(31)gulab-jamuns.jpg" class="menu-img" style="height: 68px;" alt="">
+            <div class="menu-content">
+                <a href="#">Gulab Jamuns</a><span>9,95 $</span>
+            </div>
+            <div class="menu-ingredients">
+                Pâtisserie de lait frit traditionnelle servie dans du sirop de miel à l'eau de rose
+            </div>
+        </div>
+        
+
+        <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
+        onclick="showProductDetails('Hyderabadi Shahi Tukda', '4,99 $', 'Fabriqué à partir de pain frit, lait condensé, lait, gâteau, crème', 'assets/img/menu/6.hyderabadi_shahi_tukda(new).jpg', event)">
+        <img src="assets/img/menu/6.hyderabadi_shahi_tukda(new).jpg" class="menu-img" style="height: 68px;" alt="">
+        <div class="menu-content">
+            <a href="#">Hyderabadi Shahi Tukda</a><span>4,99 $</span>
+        </div>
+        <div class="menu-ingredients">
+            Fabriqué à partir de pain frit, lait condensé, lait, gâteau, crème
+        </div>
+    </div>
+    
+    <!-- Mocktail Shot -->
+    
+    <div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
+        onclick="showProductDetails('Virgin Mojito', '3,99 $', 'Mocktail rafraîchissant avec citron vert, menthe et eau gazeuse', 'assets/img/menu/6.R(1)virgin-mojito.webp', event)">
+        <img src="assets/img/menu/6.R(1)virgin-mojito.webp" class="menu-img" style="height: 68px;" alt="">
+        <div class="menu-content">
+            <a href="#">Virgin Mojito</a><span>3,99 $</span>
+        </div>
+        <div class="menu-ingredients">
+            Mocktail rafraîchissant avec citron vert, menthe et eau gazeuse
+        </div>
+    </div>
+    
+    <div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
+    onclick="showProductDetails('Saudi Champange (Orange)', '3,99 $', 'Mocktail pétillant avec un mélange de jus de fruits', 'assets/img/menu/6.R(2)saudi-champagne.jpeg', event)">
+    <img src="assets/img/menu/6.R(2)saudi-champagne.jpeg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Saudi Champange (Orange)</a><span>3,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Mocktail pétillant avec un mélange de jus de fruits
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
+    onclick="showProductDetails('Mangue Epicée', '3,99 $', 'Mocktail épicé et acidulé à base de mangues fraîches', 'assets/img/menu/6R.(3)mango_spicy.webp', event)">
+    <img src="assets/img/menu/6R.(3)mango_spicy.webp" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Mangue Epicée</a><span>3,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Mocktail épicé et acidulé à base de mangues fraîches
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
+    onclick="showProductDetails('Menthe Bleue', '3,99 $', 'Mocktail rafraîchissant infusé de curaçao bleu et de menthe', 'assets/img/menu/6R.(4)blue_mint.webp', event)">
+    <img src="assets/img/menu/6R.(4)blue_mint.webp" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Menthe Bleue</a><span>3,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Mocktail rafraîchissant infusé de curaçao bleu et de menthe
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
+    onclick="showProductDetails('Extrait de Fraise', '3,99 $', 'Mocktail doux et fruité à base de fraises fraîches', 'assets/img/menu/6R(5)Strawberry-Extract.webp', event)">
+    <img src="assets/img/menu/6R(5)Strawberry-Extract.webp" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Extrait de Fraise</a><span>3,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Mocktail doux et fruité à base de fraises fraîches
+    </div>
+</div>
+
+
+
+<div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
+onclick="showProductDetails('Ananas épicé', '3,99 $', 'Mocktail sucré et fruité à base dananas frais', 'assets/img/menu/6R.pineapple_spice(new).jpg', event)">
+<img src="assets/img/menu/6R.pineapple_spice(new).jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+    <a href="#">Ananas épicé</a><span>3,99 $</span>
+</div>
+<div class="menu-ingredients">
+    Mocktail sucré et fruité à base d'ananas frais
+</div>
+</div>
+
+<!-- Pakwan Special  -->
+<div class="col-lg-6 menu-item filter-Pakwan_special filter-non-vegetarian"
+onclick="showProductDetails('Nahari Paya', '14,99 $', 'Paya et Zaban cuits lentement toute la nuit avec un masala nahari spécial de Hyderabad (Paya2 pcs), Zaban', 'assets/img/menu/7.(32)Nihari+paya.jpg', event)">
+<img src="assets/img/menu/7.(32)Nihari+paya.jpg" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+    <a href="#">Nahari Paya</a><span>14,99 $</span>
+</div>
+<div class="menu-ingredients">
+    Paya et Zaban cuits lentement toute la nuit avec un masala nahari spécial de Hyderabad (Paya2 pcs), Zaban
+</div>
+</div>
+<div class="col-lg-6 menu-item filter-Pakwan_special filter-non-vegetarian"
+    onclick="showProductDetails('Soupe Hyderabadi Marag', '13,99 $', 'Mouton cuit traditionnellement à la vapeur avec des saveurs de Zafran et un mélange dépices', 'assets/img/menu/7.(33)Hyderabadi_marag.jpg', event)">
+    <img src="assets/img/menu/7.(33)Hyderabadi_marag.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Soupe Hyderabadi Marag</a><span>13,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Mouton cuit traditionnellement à la vapeur avec des saveurs de Zafran et un mélange d'épices
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Pakwan_special filter-non-vegetarian"
+    onclick="showProductDetails('Haleem Hyderabadi', '12,99 $', 'Riche et copieux ragoût fait de blé, dorge, de lentilles et de viande', 'assets/img/menu/7.(34)Hyderabadi_haleem.webp', event)">
+    <img src="assets/img/menu/7.(34)Hyderabadi_haleem.webp" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Haleem Hyderabadi</a><span>12,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Riche et copieux ragoût fait de blé, d'orge, de lentilles et de viande
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Pakwan_special filter-non-vegetarian"
+    onclick="showProductDetails('Chakna Hyderabadi', '11,99 $', 'Curry épicé et acidulé aux abats, une délicatesse de Hyderabad', 'assets/img/menu/7.(35)hyderabadi_chakna.avif', event)">
+    <img src="assets/img/menu/7.(35)hyderabadi_chakna.avif" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Chakna Hyderabadi</a><span>11,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Curry épicé et acidulé aux abats, une délicatesse de Hyderabad
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Pakwan_special filter-non-vegetarian"
+    onclick="showProductDetails('Tawa Kaleji', '10,99 $', 'Foie de chèvre frit aux épices', 'assets/img/menu/7.(36)tawa_kaleji.jpg', event)">
+    <img src="assets/img/menu/7.(36)tawa_kaleji.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Tawa Kaleji</a><span>10,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Foie de chèvre frit aux épices
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Pakwan_special filter-non-vegetarian "
+    onclick="showProductDetails('Tawa Bheja', '9,99 $', 'Cerveau de chèvre frit aux épices', 'assets/img/menu/7.(37)Tawa_bheja.jpg', event)">
+    <img src="assets/img/menu/7.(37)Tawa_bheja.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Tawa Bheja</a><span>9,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Cerveau de chèvre frit aux épices
+    </div>
+</div>
+
+<!-- Boissons/Accompagnements -->
+<div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
+    onclick="showProductDetails('Zafrani Chai', '1,99 $', 'Chai mondialement célèbre préparé dans le style traditionnel dHyderabadi', 'assets/img/menu/7.R(1)Zafrani_chai.jpg', event)">
+    <img src="assets/img/menu/7.R(1)Zafrani_chai.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Zafrani Chai</a><span>1,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Chai mondialement célèbre préparé dans le style traditionnel d'Hyderabadi
+    </div>
+</div>
+<div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
+    onclick="showProductDetails('Biscuit Osmania', '1,49 $', 'Biscuit Osmania très délicieux', 'assets/img/menu/7R(2)osmania_biscuit.jpg', event)">
+    <img src="assets/img/menu/7R(2)osmania_biscuit.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Biscuit Osmania</a><span>1,49 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Biscuit Osmania très délicieux
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
+    onclick="showProductDetails('Boisson en conserve', '1,99 $', 'Assortiment de boissons gazeuses en conserve', 'assets/img/menu/7.R(3)Canned_POP.jpg', event)">
+    <img src="assets/img/menu/7.R(3)Canned_POP.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Boisson en conserve</a><span>1,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Assortiment de boissons gazeuses en conserve
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
+    onclick="showProductDetails('Limonade Dication', '1,99 $', 'menthe, citron, gingembre', 'assets/img/menu/7.R(4)Dication_lemon.webp', event)">
+    <img src="assets/img/menu/7.R(4)Dication_lemon.webp" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Limonade Dication</a><span>1,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        menthe, citron, gingembre
+    </div>
+</div>
+
+
+<div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
+onclick="showProductDetails('Bouteille deau', '1,99 $', 'Eau minérale fraîche', 'assets/img/menu/7.R(5)Water_bottle.webp', event)">
+<img src="assets/img/menu/7.R(5)Water_bottle.webp" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+    <a href="#">Bouteille d'eau</a><span>1,99 $</span>
+</div>
+<div class="menu-ingredients">
+    Eau minérale fraîche
+</div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
+onclick="showProductDetails('Lassi à la mangue', '1,99 $', 'Lassi à la mangue fraîche', 'assets/img/menu/7R.mango-lassi-recipe.jfif', event)">
+<img src="assets/img/menu/7R.mango-lassi-recipe.jfif" class="menu-img" style="height: 68px;" alt="">
+<div class="menu-content">
+    <a href="#">Lassi à la mangue</a><span>1,99 $</span>
+</div>
+<div class="menu-ingredients">
+    Lassi à la mangue fraîche
+</div>
+</div>
+
+                <!-- Nann Paratha  -->
+                <div class="col-lg-6 menu-item filter-Naan_paratha filter-vegetarian"
+                onclick="showProductDetails('Naan nature', '2,49 $', 'Pain Naan traditionnel, moelleux et léger', 'assets/img/menu/8.(38)Plain-Naan.jpg', event)">
+                <img src="assets/img/menu/8.(38)Plain-Naan.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                    <a href="#">Naan nature</a><span>2,49 $</span>
+                </div>
+                <div class="menu-ingredients">
+                    Pain Naan traditionnel, moelleux et léger
+                </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-Naan_paratha filter-vegetarian"
+                onclick="showProductDetails('Naan au beurre', '2,99 $', 'Pain Naan beurré pour une saveur riche', 'assets/img/menu/8.(39)Butter_naan.jpg', event)">
+                <img src="assets/img/menu/8.(39)Butter_naan.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                    <a href="#">Naan au beurre</a><span>2,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                    Pain Naan beurré pour une saveur riche
+                </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-Naan_paratha filter-vegetarian"
+                onclick="showProductDetails('Naan à lail', '2,99 $', 'Pain Naan aromatisé à lail', 'assets/img/menu/8.(40)garlic-naan.jpg', event)">
+                <img src="assets/img/menu/8.(40)garlic-naan.jpg" class="menu-img" style="height: 68px;" alt="">
+                <div class="menu-content">
+                    <a href="#">Naan à l'ail</a><span>2,99 $</span>
+                </div>
+                <div class="menu-ingredients">
+                    Pain Naan aromatisé à l'ail
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-Naan_paratha filter-vegetarian"
+    onclick="showProductDetails('Paratha Lachha', '2,99 $', 'Pain plat indien à plusieurs couches', 'assets/img/menu/8.(41)Lachha-paratha.jpg', event)">
+    <img src="assets/img/menu/8.(41)Lachha-paratha.jpg" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Paratha Lachha</a><span>2,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Pain plat indien à plusieurs couches
+    </div>
+</div>
+
+<div class="col-lg-6 menu-item filter-Naan_paratha filter-vegetarian"
+    onclick="showProductDetails('Roti Tawa', '2,99 $', 'Roti indien traditionnel cuit sur un tawa', 'assets/img/menu/8.(42)Tawa_roti.webp', event)">
+    <img src="assets/img/menu/8.(42)Tawa_roti.webp" class="menu-img" style="height: 68px;" alt="">
+    <div class="menu-content">
+        <a href="#">Roti Tawa</a><span>2,99 $</span>
+    </div>
+    <div class="menu-ingredients">
+        Roti indien traditionnel cuit sur un tawa
+    </div>
+</div>
+
+              <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            </div>
+          </div>
+          <!-- <div class="menu-swiper-pagination"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Pagination dots -->
+    <!-- <div style="text-align:center" id="paginationDots" style="margin-top: 20px !important;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+  </section><!-- End Menu Section --><!-- End Menu Section -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="productModal" style="text-align: center; align-items: center; margin-top: 50px;">
+    <div class="modal-dialog modal-lg" style="max-width: 800px;"> <!-- Set a maximum width for the modal -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="menu-content"></h5>
+          <button type="button" class="close" onclick="closeProductModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="" id="productImage" class="img-fluid" alt="Product Image">
+          <p id="productPrice"></p>
+          <p id="menu-ingredients"></p> <!-- Change ID here to match -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Specials Section ======= -->
+  <section id="specials" class="specials">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Spécialités</h2>
+        <p>Découvrez nos spécialités</p>
+        
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3" >
+          
+          <ul class="nav nav-tabs flex-column" id="special-filters">
+            <li class="nav-item">
+            
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Paya Nahari</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Soupe Marag Hyderabadi </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Haleem Hyderabadi</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Tawa Kaleji </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Tawa Bheja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Chakna Hyderabadi</a>
+
+            </li>
+
+
+          </ul>
+        </div>
+
+        
+        <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content" id ="spec-items">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Paya Nahari</h3>
+                    <p class="fst-italic">Plongez dans la saveur exquise de la Paya Nahari</p>
+                    <p>Découvrez l'essence de la cuisine authentique d'Hyderabad avec notre Paya Nahari, un plat qui titille
+                      les papilles et réchauffe l'âme. Fabriqué avec des pieds d'agneau tendres mijotés dans une sauce riche et aromatique
+                      infusée de épices et d'herbes traditionnelles, notre Paya Nahari est un chef-d'œuvre culinaire qui
+                      promet une expérience culinaire vraiment inoubliable.</p>
+                    <p>Immergez-vous dans les saveurs riches et les textures copieuses de la Paya Nahari, un plat qui a été
+                      chéri depuis des générations. Que ce soit dégusté comme un repas réconfortant par une journée froide ou comme une festivité
+                      avec vos proches, notre Paya Nahari ne manquera pas de laisser une impression durable.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/7.(32)Nihari+paya.jpg" alt="Paya Nahari" class="img-fluid"
+                      >
+                      14,99 $
+                  </div>
+                </div>
+              </div>
+  
+
+
+              <div class="tab-pane " id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Soupe Hyderabadi Marag</h3>
+                    <p class="fst-italic">Découvrez le Délice de la Soupe Hyderabadi Marag</p>
+                    <p>Embarquez pour un voyage culinaire avec notre Soupe Hyderabadi Marag, une délicatesse traditionnelle qui captive
+                      les sens avec son goût exquis et son arôme envoûtant. Fabriquée avec de la viande tendre, des épices parfumées et un mélange
+                      d'herbes aromatiques, notre Soupe Hyderabadi Marag est un véritable témoignage de la riche tradition culinaire de
+                      Hyderabad.</p>
+                    <p>Laissez-vous séduire par la texture veloutée et les saveurs riches de la Soupe Hyderabadi Marag, un plat qui ravit à la fois
+                      le palais et l'âme. Que ce soit apprécié comme entrée ou comme plat principal, notre Soupe Hyderabadi Marag
+                      promet d'embellir votre expérience culinaire à chaque cuillerée.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/7.(33)Hyderabadi_marag.jpg" alt="Hyderabadi Marag" class="img-fluid"
+                      >
+                       13,99 $
+                  </div>
+                </div>
+              </div>
+  
+            <!-- onclick="openModal('assets/img/menu/7.(33)Hyderabadi_marag.jpg')" -->
+
+            <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Haleem Hyderabadi</h3>
+                    <p class="fst-italic">Savourez la Richesse de l'Authentique Haleem Hyderabadi</p>
+                    <p>Plongez dans le goût exquis du Haleem Hyderabadi, un plat bien-aimé renommé pour ses saveurs riches
+                      et sa texture consistante. Fabriqué à partir d'un mélange de viande de qualité supérieure, de lentilles et d'épices
+                      aromatiques, notre Haleem Hyderabadi est lentement cuit à la perfection, ce qui donne un plat à la fois réconfortant et
+                      satisfaisant.</p>
+                    <p>Avec sa consistance crémeuse et son goût indulgent, le Haleem Hyderabadi est un chef-d'œuvre culinaire qui
+                      ravit les sens et réchauffe l'âme. Que ce soit apprécié comme un repas complet ou une collation réconfortante,
+                      notre Haleem Hyderabadi promet de vous transporter dans les rues de Hyderabad à chaque cuillerée.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/7.(34)Hyderabadi_haleem.webp" alt="Hyderabadi Haleem" class="img-fluid">
+                    12,99 $
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tawa Kaleji</h3>
+                    <p class="fst-italic">Découvrez les Saveurs Authentiques du Tawa Kaleji</p>
+                    <p>Immergez-vous dans le riche patrimoine culinaire de la cuisine indienne avec notre Tawa Kaleji. Savourez le
+                      goût succulent du foie tendre cuit à la perfection sur un tawa traditionnel (plaque de cuisson), infusé avec
+                      des épices aromatiques et des herbes.</p>
+                    <p>Chaque bouchée de Tawa Kaleji est une explosion de saveurs, offrant un délicieux mélange de textures et de
+                      goûts qui raviront vos papilles. Que vous soyez fan de mets épicés ou préfériez des saveurs plus douces, notre
+                      Tawa Kaleji s'adresse à tous les palais.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/7.(36)tawa_kaleji.jpg" alt="Tawa Kaleji" class="img-fluid" style="height: 230px !important;">
+                    11,99 $
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tawa Bheja</h3>
+                    <p class="fst-italic">Découvrez les Saveurs Riches de Hyderabad</p>
+                    <p>Embarquez pour un voyage culinaire à Hyderabad avec notre Tawa Bheja, un plat qui incarne l'essence de la
+                      cuisine traditionnelle indienne. Dégustez le mélange exquis d'épices et de saveurs qui définissent le riche
+                      patrimoine culinaire de Hyderabad, une ville réputée pour sa gastronomie vibrante.</p>
+                    <p>Notre Tawa Bheja présente des morceaux succulents de cervelle cuits à la perfection sur une plaque chaude,
+                      infusés d'une symphonie d'épices authentiques qui éveillent les sens. Chaque bouchée est une célébration de
+                      saveur, offrant une expérience alléchante qui vous transportera dans les rues de Hyderabad.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/7.(37)Tawa_bheja.jpg" alt="Tawa Bheja" style="height: 230px !important;" class="img-fluid">
+                    10,99 $
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-pane" id="tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hyderabadi Chakna</h3>
+                    <p class="fst-italic">Découvrez les Saveurs Authentiques de la Cuisine Hyderabadi</p>
+                    <p>Plongez dans le goût riche et savoureux de l'Hyderabadi Chakna, une délice culinaire qui capture l'essence de
+                      la cuisine traditionnelle indienne. Notre Hyderabadi Chakna est préparé méticuleusement avec des ingrédients
+                      de qualité supérieure et des épices authentiques, garantissant une explosion de saveurs à chaque bouchée.</p>
+                    <p>Avec sa viande tendre et ses épices aromatiques, l'Hyderabadi Chakna est un mélange parfait de saveurs
+                      savoureuses et épicées, ce qui en fait un choix préféré des amateurs de gastronomie. Que vous ayez envie d'un
+                      repas copieux ou que vous cherchiez à explorer de nouvelles expériences culinaires, notre Hyderabadi Chakna
+                      promet de satisfaire vos papilles gustatives.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/7.(35)hyderabadi_chakna.avif" alt="Hyderabadi Chakna" style="height: 230px !important;" class="img-fluid">
+                    9,99 $
+                  </div>
+                </div>
+              </div>
+              
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Specials Section -->
+    <!-- ======= Events Section ======= -->
+    <!-- <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your Events in our Restaurant</p>
+        </div>
+
+        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="Birthday Parties">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>$3500</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Celebrate your special day with us!
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Fun-filled activities and entertainment for all ages.</li>
+                    <li><i class="bi bi-check-circled"></i> Customized birthday packages to suit your preferences.</li>
+                    <li><i class="bi bi-check-circled"></i> Delicious food and drinks to delight your guests.</li>
+                  </ul>
+                  <p>
+                    Let us help you create cherished memories on your birthday! Our dedicated team will ensure everything is perfect for your celebration.
+                  </p>
+                </div>
+              </div>
+            </div> End testimonial item -->
+            
+
+
+<!-- 
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="Private Parties">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>$3500</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Host your unforgettable private party with us!
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Exclusive venue for your special occasion.</li>
+                    <li><i class="bi bi-check-circled"></i> Customizable menu options tailored to your preferences.</li>
+                    <li><i class="bi bi-check-circled"></i> Dedicated staff to ensure everything runs smoothly.</li>
+                  </ul>
+                  <p>
+                    Whether it's a birthday celebration, anniversary, or corporate event, our team will work with you to create a memorable experience for you and your guests.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+            
+            <!-- <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="Custom Parties">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>$3500</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Let your imagination run wild with our custom party options!
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Tailor-made party themes and decorations.</li>
+                    <li><i class="bi bi-check-circled"></i> Personalized menus crafted to suit your tastes.</li>
+                    <li><i class="bi bi-check-circled"></i> Professional event planners to bring your vision to life.</li>
+                  </ul>
+                  <p>
+                    Whether it's a milestone celebration or a unique gathering, we'll work closely with you to design an unforgettable event. From concept to execution, we'll ensure every detail reflects your style and preferences.
+                  </p>
+                </div>
+              </div>
+            </div>End testimonial item -->
+            
+
+          <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> --> 
+    <!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <!-- <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Book a Table</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Book a Table</button></div>
+        </form>
+
+      </div>
+    </section>End Book A Table Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
+      
+          <div class="section-title">
+            <h2>Témoignages</h2>
+            <p>Ce qu'ils disent de nous</p>
+          </div>
+      
+          <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Chez Pakwan Express, nous nous efforçons de fournir une expérience culinaire qui transcende la simple satisfaction. Nos plats sont préparés avec soin, garantissant que chaque bouchée est un voyage délicieux de saveurs et d'arômes. De nos délicieuses options végétariennes à nos délices non végétariens alléchants, chaque plat est un témoignage de notre engagement envers l'excellence. Venez savourer l'essence de la brillance culinaire avec nous.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>PDG & Fondateur</h4>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Explorez un monde de merveilles culinaires chez Pakwan Express. Chaque plat est un chef-d'œuvre conçu avec précision et passion, promettant une expérience culinaire inoubliable. Que vous vous régaliez de nos créations végétariennes exotiques ou que vous savouriez nos spécialités non végétariennes tentantes, chaque bouchée est une révélation de saveurs et de textures. Laissez-nous vous emmener dans un voyage gastronomique qui éveille vos sens et vous laisse désireux d'en savoir plus.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Élevez votre expérience culinaire avec Pakwan Express. Nous sommes fiers de servir des plats qui ne sont pas seulement des repas, mais des moments de pur bonheur. Chaque ingrédient est soigneusement sélectionné, chaque recette est perfectionnée pour vous offrir une symphonie de saveurs qui dansent sur votre palais. Que vous soyez un connaisseur de délices végétariens ou un amateur de mets non végétariens indulgents, notre menu a quelque chose d'extraordinaire pour chaque palais averti. Rejoignez-nous et plongez dans un voyage culinaire qui célèbre l'art de la cuisine.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Propriétaire de magasin</h4>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Découvrez la béatitude culinaire chez Pakwan Express. Notre engagement envers l'excellence transparaît dans chaque plat que nous servons, alors que nous mêlons tradition et innovation pour créer des chefs-d'œuvre gastronomiques. Que vous recherchiez l'embrassade réconfortante de nos offres végétariennes ou les saveurs audacieuses de nos spécialités non végétariennes, chaque bouchée est un témoignage de notre dévouement à la qualité et à la saveur. Rejoignez-nous pour une expérience culinaire inoubliable qui titillera vos papilles gustatives et vous laissera désireux d'en savoir plus.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Dégustez l'essence de l'art culinaire chez Pakwan Express. Notre dévouement à la saveur et à l'authenticité transparaît dans chaque plat que nous préparons. De la gamme vibrante de délices végétariens aux offres savoureuses de nos spécialités non végétariennes, chaque bouchée raconte une histoire de passion et de créativité. Rejoignez-nous et plongez-vous dans une aventure gastronomique qui célèbre la riche diversité des saveurs du monde entier.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div><!-- End testimonial item -->
+      
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+        </div>
+      </section><!-- End Testimonials Section -->
+      
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Galerie</h2>
+            <p>Quelques photos de notre restaurant</p>
+  
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <!-- <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Chefs</h2>
+          <p>Our Professional Chefs</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Master Chef</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Patissier</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>Cook</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Chefs Section -->
+
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contactez-nous</p>
+  
+    </div>
+  </div>
+
+  <div data-aos="fade-up">
+    <iframe style="border:0; width: 100%; height: 350px;"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.9972466132244!2d-73.6269130238544!3d45.526500171075085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919561d7d865f%3A0xc74dbce77fa697!2sPakwan%20Express!5e1!3m2!1sen!2sin!4v1714923544740!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="container" data-aos="fade-up" >
+
+    <div class="row mt-5">
+
+        <div class="col-lg-12">
+            <div class="info d-flex justify-content-start">
+              <div class="address col-lg-4 col-md-6 mt-2">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Adresse :</h4>
+                <p>766 Rue Jean-Talon O, Montréal, QC H3N 1S2, Canada</p>
+              </div>
+              <div class="open-hours col-lg-3 col-md-6 mt-2">
+                <i class="bi bi-clock"></i>
+                <h4>Heures d'ouverture :</h4>
+                <p>
+                  Lundi au samedi :
+                  12h00 - 2h00
+                </p>
+              </div>
+          
+              <div class="email col-lg-3 col-md-6 mt-2">
+                <i class="bi bi-envelope"></i>
+                <h4>Email :</h4>
+                <p><a href="mailto:info@pakwanexpress.com">info@pakwanexpress.com</a></p>
+              </div>
+          
+              <div class="phone col-lg-2 col-md-6 mt-2">
+                <i class="bi bi-phone"></i>
+                <h4>Téléphone :</h4>
+                <p><a href="tel:+15142700050">+15142700050</a></p>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+      </div>
+
+      
+
+      <!-- <div class="col-lg-8 mt-5 mt-lg-0">
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div> -->
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-5 col-md-5">
+        <div class="footer-info text-center">
+          <!-- <h3>Pakwan Express </h3>
+          <p>
+            766 Rue Jean-Talon O,<br>
+            <br>Montréal, QC H3N 1S2, Canada<br>
+            <strong>Phone:</strong> +16472693676<br>
+            <a href="mailto:info@pakwanexpress.com">info@pakwanexpress.com</a>
+
+          </p> -->
+          <div class="social-links mt-3">
+            <a href="https://www.facebook.com/profile.php?id=61558668633381"target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/pakwanexpressmontreal/"target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://wa.me/+15142700050"target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+
+        </div>
+        
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 footer-links text-center fw-bold" style="font-family:sans-serif;">
+        <h4 class="" style="padding-bottom: 0px;">Liens utiles</h4>
+        <ul class="d-flex justify-content-center" style="flex-wrap: wrap;">
+          <li><a class="nav-link scrollto" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">À propos</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Spécialités</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#events">Événements</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li> -->
+          <li><a class="nav-link scrollto" href="#gallery">Galerie</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+
+        </ul>
+      </div>
+
+      <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
+        <h4>"Subscribe to Our Newsletter for Exclusive Offers!</h4>
+        <p>Sign up now to receive our newsletter and stay updated on the latest offers, events, and culinary delights from our restaurant. Don't miss out on the chance to indulge in our delectable dishes and special promotions. Join our newsletter community today!"</p>
+        <form action="" method="post">
+          <input type="email" name="email"><input type="submit" value="Subscribe">
+        </form>
+
+      </div> -->
+
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2024 <strong><span>Pakwan Express </span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://Hitechways.com/" target="_blank">Hitechways</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Your custom JavaScript -->
+
+  <script>
+    function showProductDetails(name, price, ingredients, imageUrl) {
+  event.preventDefault();
+
+  let list = [];
+  if (ingredients?.length) {
+    list = ingredients.split(',').map(ingredient => ingredient.trim());
+    console.log("list",list);
+  }
+
+  console.log("Ingredients list:", list);
+
+  // Create an unordered list for the ingredients
+  let ul = $('<ul></ul>');
+  list.forEach(ingredient => {
+    ul.append($('<li></li>').text(ingredient));
+  });
+
+  // Update modal content with product details
+  $('#menu-content').text(name);
+  $('#productPrice').text(price);
+  $('#menu-ingredients').empty().append(ul); // Empty any existing content and append the new list
+  $('#productImage').attr('src', imageUrl);
+
+  // Show the modal
+  $('#productModal').modal('show');
+}
+  </script>
+
+  <script>
+    function closeProductModal() {
+      $('#productModal').modal('hide');
+    }
+  </script>
+
+  <!-- <script>
+    document.getElementById("menu-flters").addEventListener("click", function (event) {
+      var filterItem = event.target;
+      var toggleSwitch = document.getElementById("toggle-switch");
+
+      // Check if the clicked item is not the "All" filter
+      if (filterItem.getAttribute("data-filter") !== "*") {
+        toggleSwitch.style.display = "none"; // Hide the toggle switch
+      } else {
+        toggleSwitch.style.display = "block"; // Show the toggle switch
+      }
+    });
+
+    document.getElementById("togBtn").addEventListener("change", function () {
+      var allFilter = document.querySelector("[data-filter='*']");
+      if (allFilter.classList.contains("filter-active")) {
+        var vegetarianItems = document.querySelectorAll(".vegetarian");
+        var nonVegetarianItems = document.querySelectorAll(".non-vegetarian");
+
+        if (this.checked) {
+          toggleVisibility(nonVegetarianItems, false);
+          toggleVisibility(vegetarianItems, true);
+        } else {
+          toggleVisibility(vegetarianItems, false);
+          toggleVisibility(nonVegetarianItems, true);
+        }
+      }
+    });
+
+    function toggleVisibility(elements, show) {
+      elements.forEach(function (element) {
+        if (show) {
+          element.style.display = ""; // Reset display property to default
+        } else {
+          element.style.display = "none";
+        }
+      });
+    }
+  </script> -->
+
+
+
+
+  <script>
+    // Get the modal
+    var modal = document.createElement("div");
+    modal.id = "myModal";
+    modal.classList.add("modal");
+    document.body.appendChild(modal);
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.createElement("img");
+    modalImg.classList.add("modal-content");
+    modal.appendChild(modalImg);
+
+    // Create close button
+    var closeButton = document.createElement("span");
+    closeButton.classList.add("close");
+    closeButton.innerHTML = "&times;";
+    modal.appendChild(closeButton);
+
+    function openModal(imgSrc) {
+      modal.style.display = "block";
+      modalImg.src = imgSrc;
+      modalImg.style.maxWidth = "80%"; // Adjust the width as needed
+      modalImg.style.maxHeight = "80vh"; // Adjust the height as needed
+      modalImg.style.display = "block";
+      modalImg.style.margin = "auto"; // Center the image horizontally
+      modalImg.style.marginTop = "10vh"; // Adjust vertical position as needed
+
+      // Position the close button relative to the modal
+      closeButton.style.display = "none";
+      // closeButton.style.top = "10px"; // Set close button top position
+      // closeButton.style.right = "10px"; // Set close button right position
+      // closeButton.style.fontSize = "24px";
+      // closeButton.style.color = "#ffffff";
+      // closeButton.style.cursor = "pointer";
+    }
+
+
+    // Close the modal when the user clicks on the close button
+    closeButton.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // Close the modal when the user clicks anywhere outside of the modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+</body>
+
+</html>
