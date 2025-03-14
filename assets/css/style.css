@@ -930,6 +930,16 @@ section {
   min-width: 100%;
 }
 
+
+@media (max-width: 768px) {
+  .img-fluid {
+      min-height: auto; /* Remove the fixed height for smaller screens */
+      max-height: auto; /* Allow image to adjust naturally */
+      width: 100%; /* Ensure it takes full width */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
