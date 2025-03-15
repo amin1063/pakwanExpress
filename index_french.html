@@ -249,11 +249,36 @@
           <p>Découvrez notre délicieux menu</p>
         </div>
 
+
+        <style>
+          @keyframes glow {
+            0% {
+              text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+            }
+
+            50% {
+              text-shadow: 0 0 15px #FFD700, 0 0 20px #FFA500;
+            }
+
+            100% {
+              text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+            }
+          }
+
+          .ramadan-glow {
+            animation: glow 4.5s infinite alternate;
+            font-weight: bold;
+            color: #FFD700;
+            /* Golden color */
+          }
+        </style>
+
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <a href="items">
               <ul id="menu-flters">
                 <li data-filter="*" class="filter-active">Tous</li>
+                <li data-filter=".filter-Ramadan" class="ramadan-glow">Iftar du Ramadan</li>
                 <li data-filter=".filter-Starter_Veg">Entrée Végétarienne</li>
                 <li data-filter=".filter-Rice_Nonveg">Biryani</li>
                 <li data-filter=".filter-platerr">Plateau</li>
@@ -285,6 +310,219 @@
               <div class="menu-swiper-slide">
                 <div class="slideshow-container" id="items">
                   <!-- id="items" -->
+
+
+
+                  <!-- Spécial Ramadan  -->
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Haleem de Mouton','','Mouton, blé, lentilles, ghee, oignons frits, épices', 'assets/img/menu/mutton_haleem.jpg', event)">
+                    <img src="assets/img/menu/mutton_haleem.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Haleem de Mouton </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Mouton, blé, lentilles, ghee, oignons frits, épices
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Jalfrezi de Mouton','','Mouton, poivrons, tomates, oignons, gingembre, ail, épices', 'assets/img/menu/mutton_jalfrezi.jpg', event)">
+                    <img src="assets/img/menu/mutton_jalfrezi.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Jalfrezi de Mouton </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Mouton, poivrons, tomates, oignons, gingembre, ail, épices
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Kebab Seekh de Poulet','','Poulet haché, gingembre, ail, piments verts, coriandre, cumin, garam masala, brochettes', 'assets/img/menu/chicken_seekh_kebab.webp', event)">
+                    <img src="assets/img/menu/chicken_seekh_kebab.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Kebab Seekh de Poulet </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Poulet haché, gingembre, ail, piments verts, coriandre, cumin, garam masala, brochettes
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Poulet au Sésame','','Poulet, sauce soja, graines de sésame, ail, miel, gingembre, vinaigre, fécule de maïs', 'assets/img/menu/sesame_chicken.jpg', event)">
+                    <img src="assets/img/menu/sesame_chicken.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Poulet au Sésame</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Poulet, sauce soja, graines de sésame, ail, miel, gingembre, vinaigre, fécule de maïs
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Poulet au Beurre', '', 'Poulet mariné dans du yaourt et des épices, cuit dans une purée de tomates et de la crème', 'assets/img/menu/3.(12)Butter-Chicken.jpg', event)">
+                    <img src="assets/img/menu/3.(12)Butter-Chicken.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Poulet au Beurre</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Poulet mariné dans du yaourt et des épices, cuit dans une purée de tomates et de la crème
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Biryani de Poulet Dum', '', 'Le célèbre biryani de poulet préparé selon la méthode traditionnelle Deg Hyderabadi et servi', 'assets/img/menu/4.(17)Chicken-dum-Biryani.jpg', event)">
+                    <img src="assets/img/menu/4.(17)Chicken-dum-Biryani.jpg" class="menu-img" style="height: 68px;"
+                      alt="">
+                    <div class="menu-content">
+                      <a href="#">Biryani de Poulet Dum</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Le célèbre biryani de poulet préparé selon la méthode traditionnelle Deg Hyderabadi et servi
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Nouilles Manchurian Végétariennes', '', 'Nouilles, chou, carottes, poivrons, oignons nouveaux, sauce soja, vinaigre, ail, gingembre, sauce chili, fécule de maïs', 'assets/img/menu/veg-manchurian_noodles.jpg', event)">
+                    <img src="assets/img/menu/veg-manchurian_noodles.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Nouilles Manchurian Végétariennes</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Nouilles, chou, carottes, poivrons, oignons nouveaux, sauce soja, vinaigre, ail, gingembre, sauce
+                      chili, fécule de maïs
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Veg Kolhapuri', '', 'Légumes variés, tomates, oignons, noix de coco, graines de pavot, piments rouges, garam masala, coriandre, cumin, gingembre, ail', 'assets/img/menu/veg_kholapuri.jpg', event)">
+                    <img src="assets/img/menu/veg_kholapuri.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Veg Kolhapuri</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Légumes variés, tomates, oignons, noix de coco, graines de pavot, piments rouges, garam masala,
+                      coriandre, cumin, gingembre, ail
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Riz à la Menthe', '', 'Riz basmati, feuilles de menthe fraîches, piments verts, oignons, ail, gingembre, cumin, garam masala, jus de citron, ghee', 'assets/img/menu/mint_rice.jpg', event)">
+                    <img src="assets/img/menu/mint_rice.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Riz à la Menthe</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Riz basmati, feuilles de menthe fraîches, piments verts, oignons, ail, gingembre, cumin, garam
+                      masala, jus de citron, ghee
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Dahi Bhalla', '', 'Urad dal, yaourt, chutney de tamarin, chutney vert, cumin rôti en poudre, sel noir, grenade, sev, feuilles de coriandre', 'assets/img/menu/dahi_bhalla.jpg', event)">
+                    <img src="assets/img/menu/dahi_bhalla.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Dahi Bhalla</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Urad dal, yaourt, chutney de tamarin, chutney vert, cumin rôti en poudre, sel noir, grenade, sev,
+                      feuilles de coriandre
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Cut Mirchi', '', 'Piments verts, besan (farine de pois chiches), farine de riz, graines de carom (ajwain), curcuma, sel, huile, chaat masala, feuilles de coriandre', 'assets/img/menu/cut_mirchi.JPG', event)">
+                    <img src="assets/img/menu/cut_mirchi.JPG" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Cut Mirchi</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Piments verts, besan (farine de pois chiches), farine de riz, graines de carom (ajwain), curcuma,
+                      sel, huile, chaat masala, feuilles de coriandre
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Aloo Bhajiya', '', 'Pommes de terre, besan (farine de pois chiches), farine de riz, graines de carom (ajwain), curcuma, sel, huile, chaat masala, feuilles de coriandre', 'assets/img/menu/aloo-bhajia.jpg', event)">
+                    <img src="assets/img/menu/aloo-bhajia.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Aloo Bhajiya</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Pommes de terre, besan (farine de pois chiches), farine de riz, graines de carom (ajwain),
+                      curcuma, sel, huile, chaat masala, feuilles de coriandre
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Pakodi', '', 'Piments verts, besan (farine de pois chiches), farine de riz, graines de carom (ajwain), curcuma, sel, huile, chaat masala, feuilles de coriandre', 'assets/img/menu/pakodi.webp', event)">
+                    <img src="assets/img/menu/pakodi.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Pakodi</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Piments verts, besan (farine de pois chiches), farine de riz, graines de carom (ajwain), curcuma,
+                      sel, huile, chaat masala, feuilles de coriandre
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken Spring Roll', '', 'Poulet effiloché, feuilles de rouleaux de printemps, chou, carottes, ail, gingembre, sauce soja, poivre noir, huile de sésame, fécule de maïs', 'assets/img/menu/chicken_spring_roll.webp', event)">
+                    <img src="assets/img/menu/chicken_spring_roll.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Spring Roll</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Poulet effiloché, feuilles de rouleaux de printemps, chou, carottes, ail, gingembre, sauce soja,
+                      poivre noir, huile de sésame, fécule de maïs
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Butter Naan', '', 'Pain naan badigeonné de beurre pour une saveur riche', 'assets/img/menu/butter_naan.jpg', event)">
+                    <img src="assets/img/menu/butter_naan.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Butter Naan</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Pain naan badigeonné de beurre pour une saveur riche
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Rooh Afza', '', 'Un sirop rafraîchissant à la rose, souvent mélangé avec de l’eau, du lait ou des desserts', 'assets/img/menu/Rooh_afza.webp', event)">
+                    <img src="assets/img/menu/Rooh_afza.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Rooh Afza</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Un sirop rafraîchissant à la rose, souvent mélangé avec de l’eau, du lait ou des desserts
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Desserts', '', 'Un sirop rafraîchissant à la rose, souvent mélangé avec de l’eau, du lait ou des desserts', 'assets/img/menu/desserts.avif', event)">
+                    <img src="assets/img/menu/desserts.avif" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Desserts</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Un sirop rafraîchissant à la rose, souvent mélangé avec de l’eau, du lait ou des desserts
+                    </div>
+                  </div>
+
+
+
+
+
+
 
 
                   <!-- platter -->
@@ -1574,7 +1812,7 @@
 
                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Paya Nahari</a>
               </li>
-           
+
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Haleem Hyderabadi</a>
               </li>
@@ -1596,57 +1834,66 @@
 
           <div class="col-lg-9 mt-4 mt-lg-0">
             <div class="tab-content" id="spec-items">
-                <div class="tab-pane active show" id="tab-1">
-                    <div class="row">
-                        <div class="col-lg-8 details order-2 order-lg-1">
-                            <h3>Nahari Paya</h3>
-                            <p class="fst-italic">Savourez l'exquise saveur du Nahari Paya</p>
-                            <p>Découvrez l'essence de la cuisine authentique hyderabadi avec notre Nahari Paya, un plat qui ravit les papilles et réchauffe l'âme. 
-                                Préparé avec des pieds d'agneau tendres mijotés dans une sauce riche et aromatique, infusée d'épices et d'herbes traditionnelles, 
-                                notre Nahari Paya est un chef-d'œuvre culinaire qui promet une expérience gastronomique inoubliable.</p>
-                            <p>Plongez dans les saveurs riches et les textures généreuses du Nahari Paya, un plat apprécié depuis des générations. 
-                                Que ce soit pour un repas réconfortant lors d'une journée froide ou un festin partagé avec vos proches, 
-                                notre Nahari Paya laissera une impression mémorable.</p>
-                        </div>
-                        <div class="col-lg-4 text-center order-1 order-lg-2">
-                            <img src="assets/img/menu/nahari_paya_New.png" alt="Nahari Paya" class="img-fluid">
-                            $11.99
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-
-
-   
-              <!-- onclick="openModal('assets/img/menu/7.(33)Hyderabadi_marag.jpg')" -->
-              <div class="tab-pane" id="tab-3">
+              <div class="tab-pane active show" id="tab-1">
                 <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                        <h3>Haleem de Mouton Hyderabadi</h3>
-                        <p class="fst-italic">Savourez la richesse de l'authentique Haleem Hyderabadi</p>
-                        <p>Offrez-vous le goût exquis de l'Haleem Hyderabadi, un plat emblématique réputé pour ses saveurs riches 
-                            et sa texture généreuse. Préparé avec un mélange de viande de qualité supérieure, de lentilles et d'épices aromatiques, 
-                            notre Haleem Hyderabadi est lentement mijoté à la perfection, offrant un plat à la fois réconfortant et satisfaisant.</p>
-                        <p>Avec sa consistance crémeuse et son goût indulgent, l'Haleem Hyderabadi est un chef-d'œuvre culinaire 
-                            qui ravit les sens et réchauffe l'âme. Que ce soit dégusté comme un repas nourrissant ou une collation réconfortante, 
-                            notre Haleem Hyderabadi vous transportera dans les rues de Hyderabad à chaque bouchée.</p>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                        <img src="assets/img/menu/7.(34)Hyderabadi_haleem.webp" alt="Haleem Hyderabadi" class="img-fluid">
-                        $12.99
-                    </div>
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Nahari Paya</h3>
+                    <p class="fst-italic">Savourez l'exquise saveur du Nahari Paya</p>
+                    <p>Découvrez l'essence de la cuisine authentique hyderabadi avec notre Nahari Paya, un plat qui
+                      ravit les papilles et réchauffe l'âme.
+                      Préparé avec des pieds d'agneau tendres mijotés dans une sauce riche et aromatique, infusée
+                      d'épices et d'herbes traditionnelles,
+                      notre Nahari Paya est un chef-d'œuvre culinaire qui promet une expérience gastronomique
+                      inoubliable.</p>
+                    <p>Plongez dans les saveurs riches et les textures généreuses du Nahari Paya, un plat apprécié
+                      depuis des générations.
+                      Que ce soit pour un repas réconfortant lors d'une journée froide ou un festin partagé avec vos
+                      proches,
+                      notre Nahari Paya laissera une impression mémorable.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/menu/nahari_paya_New.png" alt="Nahari Paya" class="img-fluid">
+                    $11.99
+                  </div>
                 </div>
-            </div>
-            
-    
-
-
+              </div>
             </div>
           </div>
+
+
+
+
+
+          <!-- onclick="openModal('assets/img/menu/7.(33)Hyderabadi_marag.jpg')" -->
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Haleem de Mouton Hyderabadi</h3>
+                <p class="fst-italic">Savourez la richesse de l'authentique Haleem Hyderabadi</p>
+                <p>Offrez-vous le goût exquis de l'Haleem Hyderabadi, un plat emblématique réputé pour ses saveurs
+                  riches
+                  et sa texture généreuse. Préparé avec un mélange de viande de qualité supérieure, de lentilles et
+                  d'épices aromatiques,
+                  notre Haleem Hyderabadi est lentement mijoté à la perfection, offrant un plat à la fois réconfortant
+                  et satisfaisant.</p>
+                <p>Avec sa consistance crémeuse et son goût indulgent, l'Haleem Hyderabadi est un chef-d'œuvre culinaire
+                  qui ravit les sens et réchauffe l'âme. Que ce soit dégusté comme un repas nourrissant ou une collation
+                  réconfortante,
+                  notre Haleem Hyderabadi vous transportera dans les rues de Hyderabad à chaque bouchée.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="assets/img/menu/7.(34)Hyderabadi_haleem.webp" alt="Haleem Hyderabadi" class="img-fluid">
+                $12.99
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
+      </div>
+      </div>
 
       </div>
     </section><!-- End Specials Section -->
@@ -1817,9 +2064,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Absolutely loved the food here! The flavors were authentic, 
-                  and every dish was perfectly cooked. From the rich curries to the freshly baked naan, 
-                  everything tasted amazing. The staff was friendly and attentive, making the dining experience even more enjoyable. 
+                  Absolutely loved the food here! The flavors were authentic,
+                  and every dish was perfectly cooked. From the rich curries to the freshly baked naan,
+                  everything tasted amazing. The staff was friendly and attentive, making the dining experience even
+                  more enjoyable.
                   Highly recommend this place for anyone craving delicious, authentic Indian cuisine!.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -1834,10 +2082,14 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  If you are looking for dum biryani or chicken 65, there would be none ither restaurant other than Pakwaan Express. 
-                  We Tried Pakwan Express and was absolutely impressed! Their mutton biryani was flavorful and perfectly cooked. 
-                  I like the quantity of mutton and and along with Chicken 65 had just the right amount of spice and crispiness. 
-                  The quality and taste were outstanding. If these dishes are anything to go by, I’m sure the rest of their menu is just as amazing. 
+                  If you are looking for dum biryani or chicken 65, there would be none ither restaurant other than
+                  Pakwaan Express.
+                  We Tried Pakwan Express and was absolutely impressed! Their mutton biryani was flavorful and perfectly
+                  cooked.
+                  I like the quantity of mutton and and along with Chicken 65 had just the right amount of spice and
+                  crispiness.
+                  The quality and taste were outstanding. If these dishes are anything to go by, I’m sure the rest of
+                  their menu is just as amazing.
                   Highly recommended!"
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -1852,11 +2104,15 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  As an Algerian who loves to travel and experience the culinary delights of different cultures, and as an avid food lover 😅🤭, 
-                  I recently had the pleasure of dining at Pakwan Express. The experience was truly phenomenal. The food was incredibly delicious, 
-                  perfect for those who enjoy well-spiced dishes. There was a great variety of dishes, impeccable cleanliness, and the staff were exceptionally welcoming and attentive.
-                   The interior of the restaurant is beautifully designed, combining modern décor with traditional cuisine. Thank you very much, Pakwan. 
-                   I wish you continued success and perseverance. I highly recommend trying it out. 🙏❤️
+                  As an Algerian who loves to travel and experience the culinary delights of different cultures, and as
+                  an avid food lover 😅🤭,
+                  I recently had the pleasure of dining at Pakwan Express. The experience was truly phenomenal. The food
+                  was incredibly delicious,
+                  perfect for those who enjoy well-spiced dishes. There was a great variety of dishes, impeccable
+                  cleanliness, and the staff were exceptionally welcoming and attentive.
+                  The interior of the restaurant is beautifully designed, combining modern décor with traditional
+                  cuisine. Thank you very much, Pakwan.
+                  I wish you continued success and perseverance. I highly recommend trying it out. 🙏❤️
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
 
@@ -1871,8 +2127,9 @@
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Clean restaurant with tasty food, tried their vegetarian Manchurian and it was very good!
-                  The service was also very nice, offering to accommodate for my food and giving my son a balloon to play with 🎈.
-                  
+                  The service was also very nice, offering to accommodate for my food and giving my son a balloon to
+                  play with 🎈.
+
                   Definitely worth a try, one day I want to try their biriyani 😋
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -1887,14 +2144,18 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Finally after long time wait is finished for real authentic Hyderabadi Desi ghee Mutton & Chiken biryani. 
-                  We all friends enjoyed a Haleem and fish pakora with Biryani and don’t forget to taste Achari chicken with butter naan just wow 😮 and have a varieties of deserts after food duble ka Meetha,
-                   fruit salad 😋 or opt for Irani chai ☕️ and the staff is very attentive and polite with multiple language service English French Arabic Hindi Telugu etc…..
-                   Thanks to Pakwan express team for getting the joy back of real Indian food in Canada Montreal 🇨🇦. Highly recommended.
-                    Can’t wait to visit again with family & friends 🔜👍
+                  Finally after long time wait is finished for real authentic Hyderabadi Desi ghee Mutton & Chiken
+                  biryani.
+                  We all friends enjoyed a Haleem and fish pakora with Biryani and don’t forget to taste Achari chicken
+                  with butter naan just wow 😮 and have a varieties of deserts after food duble ka Meetha,
+                  fruit salad 😋 or opt for Irani chai ☕️ and the staff is very attentive and polite with multiple
+                  language service English French Arabic Hindi Telugu etc…..
+                  Thanks to Pakwan express team for getting the joy back of real Indian food in Canada Montreal 🇨🇦.
+                  Highly recommended.
+                  Can’t wait to visit again with family & friends 🔜👍
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-<!-- 
+                <!-- 
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
                 <h3>syed abrar</h3>
                 <!-- <h4>Entrepreneur</h4> -->
@@ -2197,7 +2458,7 @@
             </ul>
           </div>
 
-        
+
 
           </ul>
         </div>

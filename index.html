@@ -123,7 +123,8 @@
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-        <a href="https://www.instagram.com/pakwanexpressmontreal/" target="_blank" class="position-relative animated tada infinite">
+        <a href="https://www.instagram.com/pakwanexpressmontreal/" target="_blank"
+          class="position-relative animated tada infinite">
           <img src="./assets/img/instgram_logo.png" alt="-" style="height: 40px;width: 40px;">
         </a>
       </div>
@@ -142,7 +143,7 @@
             <a href="#menu" class="btn-menu animated fadeInUp scrollto" style="margin-right: 10px;">Menu <i
                 class="fa fa-spoon" style="font-size: 20px; color: rgb(255, 255, 255);"></i></a>
             <!-- <a href="https://wa.me/+15142700050" class="btn-menu animated fadeInUp scrollto"> -->
-              <a href="https://wa.me/message/XYSI36YD6WKEO1" target="_blank" class="btn-menu animated fadeInUp scrollto">
+            <a href="https://wa.me/message/XYSI36YD6WKEO1" target="_blank" class="btn-menu animated fadeInUp scrollto">
               Book a Table
               <i class="fa fa-whatsapp" style="font-size: 20px; color: green;"></i>
             </a>
@@ -156,7 +157,7 @@
     </div>
     </div>
   </section><!-- End Hero -->
-  
+
 
   <main id="main">
 
@@ -249,17 +250,34 @@
           <p>Check Our Tasty Menu</p>
         </div>
 
+        <style>
+          @keyframes glow {
+    0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700; }
+    50% { text-shadow: 0 0 15px #FFD700, 0 0 20px #FFA500; }
+    100% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700; }
+}
+
+.ramadan-glow {
+    animation: glow 4.5s infinite alternate;
+    font-weight: bold;
+    color: #FFD700; /* Golden color */
+}
+
+        </style>
+
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <a href="items">
               <ul id="menu-flters">
 
                 <li data-filter="*" class="filter-active">All</li>
+           
+                <li data-filter=".filter-Ramadan"class="ramadan-glow">Ramadan Iftaar</li>
                 <li data-filter=".filter-Starter_Veg">Starter Veg</li>
                 <li data-filter=".filter-Rice_Nonveg">Biryani</li>
                 <li data-filter=".filter-platerr">Platter</li>
                 <li data-filter=".filter-snacks">Grab and Go</li>
-     
+
                 <li data-filter=".filter-App_Non_veg">Starter Non-Veg </li>
                 <li data-filter=".filter-Chinese_work">Chinese Wok</li>
                 <li data-filter=".filter-Curries_Veg">Curries Veg </li>
@@ -288,9 +306,230 @@
                   <!-- id="items" -->
 
 
+                  <!-- Ramadan Special  -->
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Mutton Haleem','','  Mutton, wheat, lentils, ghee, fried onions, spices', 'assets/img/menu/mutton_haleem.jpg', event)">
+                    <img src="assets/img/menu/mutton_haleem.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Mutton Haleem </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Mutton, wheat, lentils, ghee, fried onions, spices
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails(' Mutton Jalfrezi ','','Mutton, bell peppers, tomatoes, onions, ginger, garlic, spices', 'assets/img/menu/mutton_jalfrezi.jpg', event)">
+                    <img src="assets/img/menu/mutton_jalfrezi.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Mutton Jalfrezi </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Mutton, bell peppers, tomatoes, onions, ginger, garlic, spices
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails(' Chicken Seekh Kebab','','Minced chicken, ginger, garlic, green chilies, coriander, cumin, garam masala, skewers', 'assets/img/menu/chicken_seekh_kebab.webp', event)">
+                    <img src="assets/img/menu/chicken_seekh_kebab.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Seekh Kebab</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Minced chicken, ginger, garlic, green chilies, coriander, cumin, garam masala, skewers
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails(' Sesame Chicken ','','Chicken, soy sauce, sesame seeds, garlic, honey, ginger, vinegar, cornstarch', 'assets/img/menu/sesame_chicken.jpg', event)">
+                    <img src="assets/img/menu/sesame_chicken.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Sesame Chicken </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Chicken, soy sauce, sesame seeds, garlic, honey, ginger, vinegar, cornstarch
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Butter Chicken', '', 'Chicken marinated in yogurt and spices, cooked in tomato puree and cream', 'assets/img/menu/3.(12)Butter-Chicken.jpg', event)">
+                    <img src="assets/img/menu/3.(12)Butter-Chicken.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Butter Chicken</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Chicken marinated in yogurt and spices, cooked in tomato puree and cream
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails(' Chicken Dum Biryani', '', 'World famous chicken biryani prepared in tradional Deg hyderabadi way and serve', 'assets/img/menu/4.(17)Chicken-dum-Biryani.jpg', event)">
+                    <img src="assets/img/menu/4.(17)Chicken-dum-Biryani.jpg" class="menu-img" style="height: 68px;"
+                      alt="">
+                    <div class="menu-content">
+                      <a href="#"> Chicken Dum Biryani</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      World famous chicken biryani prepared in tradional Deg hyderabadi way and serve
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails(' Veg manchurian noddles', '', 'Noodles, cabbage, carrots, bell peppers, spring onions, soy sauce, vinegar, garlic, ginger, chili sauce, cornflour', 'assets/img/menu/veg-manchurian_noodles.jpg', event)">
+                    <img src="assets/img/menu/veg-manchurian_noodles.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Veg manchurian noddles</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Noodles, cabbage, carrots, bell peppers, spring onions, soy sauce, vinegar, garlic, ginger, chili
+                      sauce, cornflour
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Veg Kholapuri', '', 'Mixed vegetables, tomatoes, onions, coconut, poppy seeds, red chilies, garam masala, coriander, cumin, ginger, garlic', 'assets/img/menu/veg_kholapuri.jpg', event)">
+                    <img src="assets/img/menu/veg_kholapuri.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Veg Kholapuri</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Mixed vegetables, tomatoes, onions, coconut, poppy seeds, red chilies, garam masala, coriander,
+                      cumin, ginger, garlic
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Mint Rice', '', ' Basmati rice, fresh mint leaves, green chilies, onions, garlic, ginger, cumin, garam masala, lemon juice, ghee', 'assets/img/menu/mint_rice.jpg', event)">
+                    <img src="assets/img/menu/mint_rice.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Mint Rice</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Basmati rice, fresh mint leaves, green chilies, onions, garlic, ginger, cumin, garam masala, lemon
+                      juice, ghee
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Dahi Bhalla', '', 'Urad dal, yogurt, tamarind chutney, green chutney, roasted cumin powder, black salt, pomegranate, sev, coriander leaves', 'assets/img/menu/dahi_bhalla.jpg', event)">
+                    <img src="assets/img/menu/dahi_bhalla.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Dahi Bhalla</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Urad dal, yogurt, tamarind chutney, green chutney, roasted cumin powder, black salt, pomegranate,
+                      sev, coriander leaves
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Cut Mirchi', '', 'Green chilies, besan (gram flour), rice flour, carom seeds (ajwain), turmeric, salt, oil, chaat masala, coriander leaves', 'assets/img/menu/cut_mirchi.JPG', event)">
+                    <img src="assets/img/menu/cut_mirchi.JPG" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Cut Mirchi </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Green chilies, besan (gram flour), rice flour, carom seeds (ajwain), turmeric, salt, oil, chaat
+                      masala, coriander leaves
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Aloo Bhajiya', '', 'Green chilies, besan (gram flour), rice flour, carom seeds (ajwain), turmeric, salt, oil, chaat masala, coriander leaves', 'assets/img/menu/aloo-bhajia.jpg', event)">
+                    <img src="assets/img/menu/aloo-bhajia.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Aloo Bhajiya</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Green chilies, besan (gram flour), rice flour, carom seeds (ajwain), turmeric, salt, oil, chaat
+                      masala, coriander leaves
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Pakodi', '', 'Green chilies, besan (gram flour), rice flour, carom seeds (ajwain), turmeric, salt, oil, chaat masala, coriander leaves', 'assets/img/menu/pakodi.webp', event)">
+                    <img src="assets/img/menu/pakodi.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Pakodi </a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Green chilies, besan (gram flour), rice flour, carom seeds (ajwain), turmeric, salt, oil, chaat
+                      masala, coriander leaves
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken Spring Roll', '', 'Shredded chicken, spring roll wrappers, cabbage, carrots, garlic, ginger, soy sauce, black pepper, sesame oil, cornstarch', 'assets/img/menu/chicken_spring_roll.webp', event)">
+                    <img src="assets/img/menu/chicken_spring_roll.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Chicken Spring Roll</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Shredded chicken, spring roll wrappers, cabbage, carrots, garlic, ginger, soy sauce, black pepper,
+                      sesame oil, cornstarch
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Butter Naan', '', '   Naan Bread brushed with butter for a Rich Flavor', 'assets/img/menu/butter_naan.jpg', event)">
+                    <img src="assets/img/menu/butter_naan.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Butter Naan</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Naan Bread brushed with butter for a Rich Flavor
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Rooh Afza', '', ' A refreshing rose-flavored syrup, often mixed with water, milk, or desserts', 'assets/img/menu/Rooh_afza.webp', event)">
+                    <img src="assets/img/menu/Rooh_afza.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Rooh Afza</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      A refreshing rose-flavored syrup, often mixed with water, milk, or desserts
+                    </div>
+                  </div>
+
+                  
+                  <div class="col-lg-6 menu-item filter-Ramadan filter-vegetarian"
+                    onclick="showProductDetails('Desserts', '', ' A refreshing rose-flavored syrup, often mixed with water, milk, or desserts', 'assets/img/menu/desserts.avif', event)">
+                    <img src="assets/img/menu/desserts.avif" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Desserts</a><span></span>
+                    </div>
+                    <div class="menu-ingredients">
+                      A refreshing rose-flavored syrup, often mixed with water, milk, or desserts
+                    </div>
+                  </div>
+
+
+
+
+
+
 
                   <!-- platter -->
-                 
+
 
                   <div class="col-lg-6 menu-item filter-platerr filter-non-vegetarian"
                     onclick="showProductDetails('Tiranga platter','$39.99',' Malai tikka, haryali, Chicken tikka', 'assets/img/menu/tiranga platter.jpg', event)">
@@ -304,7 +543,7 @@
                   </div>
 
 
-                  
+
                   <div class="col-lg-6 menu-item filter-platerr filter-non-vegetarian"
                     onclick="showProductDetails('All mix platter full','$79.99','Fish, Prawns, Malai Tikka, Chicken Tikka, Tandoori Chicken Full, Chicken Sheek Kabab', 'assets/img/menu/all mix platter.jpg', event)">
                     <img src="assets/img/menu/all mix platter.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -318,8 +557,8 @@
                   </div>
 
 
-                  
-                  
+
+
                   <div class="col-lg-6 menu-item filter-platerr filter-non-vegetarian"
                     onclick="showProductDetails('All mix platter half','$39.99','Fish, Prawns, Malai Tikka, Chicken Tikka, Tandoori Chicken Full, Chicken Sheek Kabab', 'assets/img/menu/all mix platter.jpg', event)">
                     <img src="assets/img/menu/all mix platter.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -332,7 +571,7 @@
                     </div>
                   </div>
 
-                  
+
                   <!-- </div> -->
                   <!-- Product: Special Biryani Kebab Platerr -->
                   <!-- <div class="col-lg-6 menu-item filter-platerr filter-non-vegetarian "
@@ -369,28 +608,28 @@
 
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                  onclick="showProductDetails('Sheek Kebab', '$12.99', 'Ground chicken with chefs spicy  ', 'assets/img/menu/shesha_kebab.jpg', event)">
-                  <img src="assets/img/menu/shesha_kebab.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Sheek Kebab</a><span>$12.99</span>
+                    onclick="showProductDetails('Sheek Kebab', '$12.99', 'Ground chicken with chefs spicy  ', 'assets/img/menu/shesha_kebab.jpg', event)">
+                    <img src="assets/img/menu/shesha_kebab.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Sheek Kebab</a><span>$12.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Ground chicken with chef's spicy
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Ground chicken with chef's spicy 
-                  </div>
-                </div>
 
 
-                <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                onclick="showProductDetails('Chicken Pakoda', '$12.99', ' Juicy deep fried fritters with aromatic Indian herbs & spices served with house style coriander & chilli chutney', 'assets/img/menu/Chicken Pakoda.png', event)">
-                <img src="assets/img/menu/Chicken Pakoda.png" class="menu-img" style="height: 68px;" alt="">
-                <div class="menu-content">
-                  <a href="#">Chicken Pakoda</a><span>$12.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Juicy deep fried fritters with aromatic Indian herbs & spices served with house style coriander &
-                  chilli chutney
-                </div>
-              </div>
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken Pakoda', '$12.99', ' Juicy deep fried fritters with aromatic Indian herbs & spices served with house style coriander & chilli chutney', 'assets/img/menu/Chicken Pakoda.png', event)">
+                    <img src="assets/img/menu/Chicken Pakoda.png" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Pakoda</a><span>$12.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Juicy deep fried fritters with aromatic Indian herbs & spices served with house style coriander &
+                      chilli chutney
+                    </div>
+                  </div>
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Tiger Prawns', '$15.99', 'tender fried chicken  tossed in spiced yogurt sauce with curry leaves ', 'assets/img/menu/hyderabadi chicken 65.jpg', event)">
@@ -399,13 +638,13 @@
                       <a href="#">Tiger Prawns </a><span>$15.99</span>
                     </div>
                     <div class="menu-ingredients">
-                      tender fried chicken  tossed in spiced
+                      tender fried chicken tossed in spiced
                       yogurt sauce with curry leaves
                     </div>
                   </div>
 
 
-                  
+
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Fish Pakoda', '$14.99', ' Juicy deep fried fritters with aromatic Indian herbs & spices served with house style coriander & chilli chutney', 'assets/img/menu/2.Fish_Pakora.jpg(new).jpg', event)">
                     <img src="assets/img/menu/2.Fish_Pakora.jpg(new).jpg" class="menu-img" style="height: 68px;" alt="">
@@ -420,105 +659,106 @@
 
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                  onclick="showProductDetails('Chilli Chicken', '$14.99', ' Tender fried Chieken tossed in spiced bell peper and onions', 'assets/img/menu/chilli_chicken.webp', event)">
-                  <img src="assets/img/menu/chilli_chicken.webp" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Chilli Chicken </a><span>$14.99</span>
+                    onclick="showProductDetails('Chilli Chicken', '$14.99', ' Tender fried Chieken tossed in spiced bell peper and onions', 'assets/img/menu/chilli_chicken.webp', event)">
+                    <img src="assets/img/menu/chilli_chicken.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chilli Chicken </a><span>$14.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Tender fried Chieken tossed in spiced bell peper and onions
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Tender fried Chieken tossed in spiced bell peper and onions
-                  </div>
-                </div>
-  
+
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                  onclick="showProductDetails('Hyderabadi chicken 65 ', '$12.99', 'marinated with indian spices and  fried ', 'assets/img/menu/5.(26)tiger_prawns.jpg', event)">
-                  <img src="assets/img/menu/5.(26)tiger_prawns.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Hyderabadi chicken 65 </a><span>$12.99</span>
+                    onclick="showProductDetails('Hyderabadi chicken 65 ', '$12.99', 'marinated with indian spices and  fried ', 'assets/img/menu/5.(26)tiger_prawns.jpg', event)">
+                    <img src="assets/img/menu/5.(26)tiger_prawns.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Hyderabadi chicken 65 </a><span>$12.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      marinated with indian spices and
+                      fried
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    marinated with indian spices and  
-                    fried 
-                  </div>
-                </div>
 
-
-                <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                onclick="showProductDetails('Chicken Manchurian', '$12.99', ' Fried tender chicken pieces sauteed with chilli,Coriander & chopped onions in manchurian sauce', 'assets/img/menu/5.(25)chicken-manchurian.webp', event)">
-                <img src="assets/img/menu/5.(25)chicken-manchurian.webp" class="menu-img" style="height: 68px;"
-                  alt="">
-                <div class="menu-content">
-                  <a href="#">Chicken Manchurian</a><span>$12.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Fried tender chicken pieces sauteed with chilli,Coriander & chopped onions in manchurian sauce
-                </div>
-              </div>
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                  onclick="showProductDetails('Chicken 555 ', '$15.99', 'fried chicken in spicy herbs, Masala  ', 'assets/img/menu/chicken 555.webp', event)">
-                  <img src="assets/img/menu/chicken 555.webp" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Chicken 555 special </a><span>$15.99</span>
+                    onclick="showProductDetails('Chicken Manchurian', '$12.99', ' Fried tender chicken pieces sauteed with chilli,Coriander & chopped onions in manchurian sauce', 'assets/img/menu/5.(25)chicken-manchurian.webp', event)">
+                    <img src="assets/img/menu/5.(25)chicken-manchurian.webp" class="menu-img" style="height: 68px;"
+                      alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Manchurian</a><span>$12.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Fried tender chicken pieces sauteed with chilli,Coriander & chopped onions in manchurian sauce
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    fried chicken in spicy herbs, Masala 
+
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken 555 ', '$15.99', 'fried chicken in spicy herbs, Masala  ', 'assets/img/menu/chicken 555.webp', event)">
+                    <img src="assets/img/menu/chicken 555.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken 555 special </a><span>$15.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      fried chicken in spicy herbs, Masala
+                    </div>
                   </div>
-                </div>
 
-                <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                onclick="showProductDetails('Chicken Lollipop (8 Pcs)', '$14.99', ' Wet/DryChicken Drumsticks marinated in Spices, Coated in Zesty Butter, deep fried and served withhot Garlic Sauce.', 'assets/img/menu/2.(7)chicken_lolipop.jpg', event)">
-                <img src="assets/img/menu/2.(7)chicken_lolipop.jpg" class="menu-img" style="height: 68px;" alt="">
-                <div class="menu-content">
-                  <a href="#">Chicken Lollipop (8 Pcs)</a><span>$14.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Wet/DryChicken Drumsticks marinated in Spices, Coated in Zesty Butter, deep fried and served with
-                  hot Garlic Sauce.
-                </div>
-              </div>
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken Lollipop (8 Pcs)', '$14.99', ' Wet/DryChicken Drumsticks marinated in Spices, Coated in Zesty Butter, deep fried and served withhot Garlic Sauce.', 'assets/img/menu/2.(7)chicken_lolipop.jpg', event)">
+                    <img src="assets/img/menu/2.(7)chicken_lolipop.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Lollipop (8 Pcs)</a><span>$14.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Wet/DryChicken Drumsticks marinated in Spices, Coated in Zesty Butter, deep fried and served with
+                      hot Garlic Sauce.
+                    </div>
+                  </div>
 
-              <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Saseme Chicken Crispy (8ps)', '$12.99', 'Chicken breast fried until golden and crisp then coated in a sticky sauce and sprinkled with sesame seeds.', 'assets/img/menu/Crispy Saseme Chicken.jpg', event)">
                     <img src="assets/img/menu/Crispy Saseme Chicken.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
                       <a href="#"> Saseme Chicken Crispy (8ps)</a><span>$12.99</span>
                     </div>
                     <div class="menu-ingredients">
-                      Chicken breast fried until golden and crisp then coated in a sticky sauce and sprinkled with sesame seeds.
+                      Chicken breast fried until golden and crisp then coated in a sticky sauce and sprinkled with
+                      sesame seeds.
                     </div>
                   </div>
 
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-            onclick="showProductDetails('Chicken tandoori half', '$12.99', '  marinated with india spices and cooked in tandoor', 'assets/img/menu/chicken tandoori leg.jpg', event)">
-            <img src="assets/img/menu/chicken tandoori leg.jpg" class="menu-img" style="height: 68px;" alt="">
-            <div class="menu-content">
-              <a href="#">Chicken tandoori half </a><span>$12.99</span>
-            </div>
-            <div class="menu-ingredients">
-              marinated with india spices and
- cooked in tandoor
-            </div>
-          </div>
+                    onclick="showProductDetails('Chicken tandoori half', '$12.99', '  marinated with india spices and cooked in tandoor', 'assets/img/menu/chicken tandoori leg.jpg', event)">
+                    <img src="assets/img/menu/chicken tandoori leg.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken tandoori half </a><span>$12.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      marinated with india spices and
+                      cooked in tandoor
+                    </div>
+                  </div>
 
 
-          <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-          onclick="showProductDetails('Chicken tandoori full', '$23.99', '  marinated with india spices and cooked in tandoor', 'assets/img/menu/chicken tandoori leg.jpg', event)">
-          <img src="assets/img/menu/chicken tandoori leg.jpg" class="menu-img" style="height: 68px;" alt="">
-          <div class="menu-content">
-            <a href="#">Chicken tandoori full </a><span>$23.99</span>
-          </div>
-          <div class="menu-ingredients">
-            marinated with india spices and
-cooked in tandoor
-          </div>
-        </div>
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken tandoori full', '$23.99', '  marinated with india spices and cooked in tandoor', 'assets/img/menu/chicken tandoori leg.jpg', event)">
+                    <img src="assets/img/menu/chicken tandoori leg.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken tandoori full </a><span>$23.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      marinated with india spices and
+                      cooked in tandoor
+                    </div>
+                  </div>
 
 
-            
-<!-- 
+
+                  <!-- 
                 <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                 onclick="showProductDetails('Chicken Strips Boneless (8 pcs)', '$12.99', ' fried golden crisp then coated in a sticky sauce ', 'assets/img/menu/chicken strips 8.jpg', event)">
                 <img src="assets/img/menu/chicken strips 8.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -530,34 +770,34 @@ cooked in tandoor
                 </div>
               </div> -->
 
-             
-
-              <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                onclick="showProductDetails('Chicken Haryali tikka ', '$14.99', '  Marinated in blend mint, Corienderleaves', 'assets/img/menu/chicken haryali tikka.jpg', event)">
-                <img src="assets/img/menu/chicken haryali tikka.jpg" class="menu-img" style="height: 68px;" alt="">
-                <div class="menu-content">
-                  <a href="#">Chicken Haryali tikka </a><span>$14.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Marinated in blend mint, Corienderleaves
-                </div>
-              </div>
 
 
-              <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-              onclick="showProductDetails('Chicken tikka spicy', '$14.99', 'Chicken marinated in SPICY sauce red', 'assets/img/menu/chicken tikka spicy.jpg', event)">
-              <img src="assets/img/menu/chicken tikka spicy.jpg" class="menu-img" style="height: 68px;" alt="">
-              <div class="menu-content">
-                <a href="#">Chicken tikka spicy </a><span>$14.99</span>
-              </div>
-              <div class="menu-ingredients">
-                Chicken marinated in SPICY sauce red
-              </div>
-            </div>
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken Haryali tikka ', '$14.99', '  Marinated in blend mint, Corienderleaves', 'assets/img/menu/chicken haryali tikka.jpg', event)">
+                    <img src="assets/img/menu/chicken haryali tikka.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Haryali tikka </a><span>$14.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Marinated in blend mint, Corienderleaves
+                    </div>
+                  </div>
 
-            
-       
-               
+
+                  <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+                    onclick="showProductDetails('Chicken tikka spicy', '$14.99', 'Chicken marinated in SPICY sauce red', 'assets/img/menu/chicken tikka spicy.jpg', event)">
+                    <img src="assets/img/menu/chicken tikka spicy.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken tikka spicy </a><span>$14.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Chicken marinated in SPICY sauce red
+                    </div>
+                  </div>
+
+
+
+
                   <div class="col-lg-6 menu-item filter-snacks filter-non-vegetarian"
                     onclick="showProductDetails('Chicken 65 Grilled Wrap', '$7.99', 'Chicken 65 Grilled Wrap', 'assets/img/menu/1.(3)Chicken_65_Dish.jpg', event)">
                     <img src="assets/img/menu/1.(3)Chicken_65_Dish.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -581,15 +821,16 @@ cooked in tandoor
 
 
                   <div class="col-lg-6 menu-item filter-snacks filter-non-vegetarian"
-                  onclick="showProductDetails('Chicken Seekh Kebab Wrap ', '$8.99', 'Chicken Seekh Kebab Wrap', 'assets/img/menu/chicken_seekh_kebab_wrap.jpeg', event)">
-                  <img src="assets/img/menu/chicken_seekh_kebab_wrap.jpeg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Chicken Seekh Kebab Wrap |</a><span>$8.99</span>
+                    onclick="showProductDetails('Chicken Seekh Kebab Wrap ', '$8.99', 'Chicken Seekh Kebab Wrap', 'assets/img/menu/chicken_seekh_kebab_wrap.jpeg', event)">
+                    <img src="assets/img/menu/chicken_seekh_kebab_wrap.jpeg" class="menu-img" style="height: 68px;"
+                      alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Seekh Kebab Wrap |</a><span>$8.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Chicken Seekh Kebab Wrap
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Chicken Seekh Kebab Wrap
-                  </div>
-                </div>
                   <!-- <div class="col-lg-6 menu-item filter-snacks filter-vegetarian"
                     onclick="showProductDetails('Veg Grilled Sandwich', '$6.99', 'Assorted vegetables grilled to perfection and served in toasted bread slices with cheese and mayo', 'assets/img/menu/1.(5)Veg_Sandwitch.jpg', event)">
                     <img src="assets/img/menu/1.(5)Veg_Sandwitch.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -601,7 +842,7 @@ cooked in tandoor
                     </div>
                   </div> -->
 
-              
+
 
                   <!-- Appitizer Non Veg -->
 
@@ -617,10 +858,10 @@ cooked in tandoor
                     </div>
                   </div> -->
 
-                
 
 
-                     <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+
+                  <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Chicken 65 Dry', '$10.99', '  Dry/Wet Tender fried chicken tossed in spiced yogurt sauce with curry leaves', 'assets/img/menu/2.(8)Chicken-65-Dry.jpg', event)">
                     <img src="assets/img/menu/2.(8)Chicken-65-Dry.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
@@ -630,7 +871,7 @@ cooked in tandoor
                       Dry/Wet Tender fried chicken tossed in spiced yogurt sauce with curry leaves
                     </div>
                   </div>  -->
-                
+
 
                   <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Hyderabadi Sheekh Kebab Beef/Chicken', '$9.99', ' Ground Beef/Chicken marinated in coriander, White pepper, Roasted cumin,Onions', 'assets/img/menu/2(9)Hyderbadi_seekh_kebab.jpg', event)">
@@ -644,22 +885,22 @@ cooked in tandoor
                     </div>
                   </div> -->
 
-                  
+
 
                   <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
-                  onclick="showProductDetails('Garlic Mutton Chilli', '$14.99', ' marinated with indian splices, dry ', 'assets/img/menu/garlic muttoncchilli.jpg', event)">
-                  <img src="assets/img/menu/garlic muttoncchilli.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Garlic Mutton Chilli </a><span>$14.99</span>
+                    onclick="showProductDetails('Garlic Mutton Chilli', '$14.99', ' marinated with indian splices, dry ', 'assets/img/menu/garlic muttoncchilli.jpg', event)">
+                    <img src="assets/img/menu/garlic muttoncchilli.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Garlic Mutton Chilli </a><span>$14.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      marinated with indian splices, dry
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    marinated with indian splices, dry 
-                  </div>
-                </div>
-                
 
 
-                
+
+
 
                   <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                   onclick="showProductDetails('Tandoori Chicken Half Chicken', '$9.00', ' Tender Chicken pieces marinated to perfection,Sauteed with mixed-Onions-Ginger & Garlic finished with a dash of Lime juice', 'assets/img/menu/Tandoori-chiecken-full.jpg', event)">
@@ -672,7 +913,7 @@ cooked in tandoor
                   </div>
                 </div> -->
 
-<!-- 
+                  <!-- 
                 <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                 onclick="showProductDetails('Tandoori Chicken Full', '$18.00', 'Tender chicken pieces marinated to perfection,Sauteed with mixed-Onions-Ginger & Garlic finished with a dash of lime juice', 'assets/img/menu/tandoori_chicken_full.jpg', event)">
                 <img src="assets/img/menu/tandoori_chicken_full.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -683,8 +924,8 @@ cooked in tandoor
                   Tender chicken pieces marinated to perfection,Sauteed with mixed-Onions-Ginger & Garlic finished with a dash of lime juice
                 </div>
               </div> -->
-              
-              <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
+
+                  <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Tangdi Kebab (4pcs)', '$11.99', ' Spicy chicken drumsticks with aromatic Indian herbs & spices grilled over tandoori oven to juicy perfection.', 'assets/img/menu/Tangdi Kebab.webp', event)">
                     <img src="assets/img/menu/Tangdi Kebab.webp" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
@@ -694,7 +935,7 @@ cooked in tandoor
                       Spicy chicken drumsticks with aromatic Indian herbs & spices grilled over tandoori oven to juicy perfection.
                     </div>
                   </div> -->
-                  
+
                   <!-- <div class="col-lg-6 menu-item filter-App_Non_veg filter-non-vegetarian"
                     onclick="showProductDetails('Popcorn Chicken', '$11.99', 'Bite-sized pieces of chicken that have been breaded and fried to light crispy perfection.', 'assets/img/menu/Popcorn Chicken.jpg', event)">
                     <img src="assets/img/menu/Popcorn Chicken.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -705,8 +946,8 @@ cooked in tandoor
                       Bite-sized pieces of chicken that have been breaded and fried to light crispy perfection.
                     </div>
                   </div> -->
-                  
-                  
+
+
 
 
                   <!-- Curries (non_veg) -->
@@ -746,12 +987,12 @@ cooked in tandoor
                     </div>
                   </div>
 
-                  
+
                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
                     onclick="showProductDetails('Telangana Chieken curry with  rice', '$19.99', ' Authentic Telangana spicy dish', 'assets/img/menu/chicken curry.jpg', event)">
                     <img src="assets/img/menu/chicken curry.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
-                      <a href="#">Telangana Chieken curry with  rice</a><span>$19.99</span>
+                      <a href="#">Telangana Chieken curry with rice</a><span>$19.99</span>
                     </div>
                     <div class="menu-ingredients">
                       Authentic Telangana spicy dish
@@ -759,7 +1000,7 @@ cooked in tandoor
                   </div>
 
 
-               
+
 
                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
                     onclick="showProductDetails('Mutton Masala', '$16.99', 'Mughlai delight Mutton with bone cooked & simmered in creamy sauce with traditional spices & flavor of cardamoms', 'assets/img/menu/3.(13)Mughalai-Mutton.jpg', event)">
@@ -798,15 +1039,15 @@ cooked in tandoor
 
 
                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
-                  onclick="showProductDetails('Chicken Changezi', '$13.99', 'Chicken cooked in freshly ground spices with onions served with tomato gravy', 'assets/img/menu/chicken changezi.jpg', event)">
-                  <img src="assets/img/menu/chicken changezi.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Chicken Changezi</a><span>$13.99</span>
+                    onclick="showProductDetails('Chicken Changezi', '$13.99', 'Chicken cooked in freshly ground spices with onions served with tomato gravy', 'assets/img/menu/chicken changezi.jpg', event)">
+                    <img src="assets/img/menu/chicken changezi.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken Changezi</a><span>$13.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Chicken cooked in freshly ground spices with onions served with tomato gravy
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Chicken cooked in freshly ground spices with onions served with tomato gravy
-                  </div>
-                </div>
 
                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
                     onclick="showProductDetails(' Mutton Tala Hua Gosh', '$14.99', 'Boneless mutton marinated in house blend of spices fired on a tave with har...', 'assets/img/menu/3.(15)Tala_hua_gosht.jpg', event)">
@@ -819,7 +1060,7 @@ cooked in tandoor
                     </div>
                   </div>
 
-                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
+                  <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
                     onclick="showProductDetails('Chicken Kadai', '$14.99', 'Chicken bone cooked in tomato puree with traditional spices and flavor', 'assets/img/menu/chicken_karhai.jpg', event)">
                     <img src="assets/img/menu/chicken_karhai.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
@@ -839,20 +1080,20 @@ cooked in tandoor
                     </div>
                     <div class="menu-ingredients">
                       Mutton bone cooked in tomato puree with
-                      traditional spices and flavor 
+                      traditional spices and flavor
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
-                  onclick="showProductDetails('Garlic Mutton chilli', '$17.99', ' Chef’s secret creamy garlic sauce', 'assets/img/menu/garlic muttoncchilli.jpg', event)">
-                  <img src="assets/img/menu/garlic muttoncchilli.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Garlic Mutton chilli</a><span>$17.99</span>
+                    onclick="showProductDetails('Garlic Mutton chilli', '$17.99', ' Chef’s secret creamy garlic sauce', 'assets/img/menu/garlic muttoncchilli.jpg', event)">
+                    <img src="assets/img/menu/garlic muttoncchilli.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Garlic Mutton chilli</a><span>$17.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Chef’s secret creamy garlic sauce
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Chef’s secret creamy garlic sauce
-                  </div>
-                </div>
 
 
                   <div class="col-lg-6 menu-item filter-Curries filter-non-vegetarian"
@@ -867,8 +1108,8 @@ cooked in tandoor
                   </div>
 
                   <!-- Curries Veg -->
-               
-<!--
+
+                  <!--
                   <div class="col-lg-6 menu-item filter-Veg filter-vegetarian"
                     onclick="showProductDetails('Baby Corn Wet', '$7.99', ' Tender fried BabyCorn tossed in spiced yogurt sauce with curry leaves.', 'assets/img/menu/2R(2).Baby_corn.jpg', event)">
                     <img src="assets/img/menu/2R(2).Baby_corn.jpg" class="menu-img" style="height: 68px;" alt="">
@@ -891,15 +1132,15 @@ cooked in tandoor
                     </div>
                   </div> -->
 
-          
 
-      
+
+
 
 
                   <!-- starter veg  -->
 
 
- 
+
                   <!-- <div class="col-lg-6 menu-item filter-Veg_special  filter-vegetarian"
                     onclick="showProductDetails('Tamatar Ka Cut / Egg/ No Egg', '$7.99', 'Fresh tomatoes cooked with herbs and spices tempered with garlic', 'assets/img/menu/3R(3)tomato_Cut_egg.webp', event)">
                     <img src="assets/img/menu/3R(3)tomato_Cut_egg.webp" class="menu-img" style="height: 68px;" alt="">
@@ -911,8 +1152,8 @@ cooked in tandoor
                     </div>
                   </div>  -->
 
-                  
-                   <div class="col-lg-6 menu-item filter-Starter_Veg filter-non-vegetarian"
+
+                  <div class="col-lg-6 menu-item filter-Starter_Veg filter-non-vegetarian"
                     onclick="showProductDetails('Lukmi 2pc', '$3.99', ' Ground mutton with chef’s spicy patties', 'assets/img/menu/lukmi.jpg', event)">
                     <img src="assets/img/menu/lukmi.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
@@ -921,29 +1162,29 @@ cooked in tandoor
                     <div class="menu-ingredients">
                       Ground mutton with chef’s spicy patties
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="col-lg-6 menu-item filter-Starter_Veg filter-non-vegetarian"
-                  onclick="showProductDetails('Samosa (2 PCS)', '$2.99', ' Patties stuffed with mashed potatoes and  deep fried', 'assets/img/menu/1.(2)Veg_Samosa.jpg', event)">
-                  <img src="assets/img/menu/1.(2)Veg_Samosa.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#"> Samosa (2 PCS) </a><span>$2.99</span>
+                    onclick="showProductDetails('Samosa (2 PCS)', '$2.99', ' Patties stuffed with mashed potatoes and  deep fried', 'assets/img/menu/1.(2)Veg_Samosa.jpg', event)">
+                    <img src="assets/img/menu/1.(2)Veg_Samosa.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Samosa (2 PCS) </a><span>$2.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Patties stuffed with mashed potatoes and deep fried
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Patties stuffed with mashed potatoes and  deep fried
-                  </div>
-                </div>
 
-                <div class="col-lg-6 menu-item filter-Starter_Veg filter-vegetarian"
-                onclick="showProductDetails('Fries Medium', '$4.99', '   Potato strips deep fried', 'assets/img/menu/1.snakes_fries(new).jpg', event)">
-                <img src="assets/img/menu/1.snakes_fries(new).jpg" class="menu-img" style="height: 68px;" alt="">
-                <div class="menu-content">
-                  <a href="#">Fries </a><span>$4.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Potato strips deep fried
-                </div>
-              </div>
+                  <div class="col-lg-6 menu-item filter-Starter_Veg filter-vegetarian"
+                    onclick="showProductDetails('Fries Medium', '$4.99', '   Potato strips deep fried', 'assets/img/menu/1.snakes_fries(new).jpg', event)">
+                    <img src="assets/img/menu/1.snakes_fries(new).jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Fries </a><span>$4.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Potato strips deep fried
+                    </div>
+                  </div>
 
 
 
@@ -956,94 +1197,94 @@ cooked in tandoor
                     </div>
                     <div class="menu-ingredients">
                       This Indo-Chinese fusion dish is perfect for
-                      those who enjoy Chinese flavor 
+                      those who enjoy Chinese flavor
                     </div>
                   </div>
 
                   <div class="col-lg-6 menu-item filter-Starter_Veg filter-vegetarian"
-                  onclick="showProductDetails('Veg Manchurian', '$11.99', ' Tossing mix veg balls in Manchurian sauce ', 'assets/img/menu/2.R(1)Veg_manchoriyan.jpg', event)">
-                  <img src="assets/img/menu/2.R(1)Veg_manchoriyan.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Veg Manchurian</a><span>$11.99</span>
+                    onclick="showProductDetails('Veg Manchurian', '$11.99', ' Tossing mix veg balls in Manchurian sauce ', 'assets/img/menu/2.R(1)Veg_manchoriyan.jpg', event)">
+                    <img src="assets/img/menu/2.R(1)Veg_manchoriyan.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Veg Manchurian</a><span>$11.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Tossing mix veg balls in Manchurian sauce
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Tossing mix veg balls in Manchurian sauce 
-                  </div>
-                </div>
 
                   <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
-                  onclick="showProductDetails(' Paneer Chilli', '$13.99', 'This Indo-Chinese fusion dish is perfect for those who enjoy Chinese flavor .', 'assets/img/menu/paneer_chilli.webp', event)">
-                  <img src="assets/img/menu/paneer_chilli.webp" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#"> Paneer Chilli </a><span>$13.99</span>
+                    onclick="showProductDetails(' Paneer Chilli', '$13.99', 'This Indo-Chinese fusion dish is perfect for those who enjoy Chinese flavor .', 'assets/img/menu/paneer_chilli.webp', event)">
+                    <img src="assets/img/menu/paneer_chilli.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Paneer Chilli </a><span>$13.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      This Indo-Chinese fusion dish is perfect
+                      for those who enjoy Chinese flavor .
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    This Indo-Chinese fusion dish is perfect
-                    for those who enjoy Chinese flavor .
-                </div>
-                </div>
-
-
-                
-                <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
-                onclick="showProductDetails('Chilli garlic fries', '$8.99', ' Potato strips deep fried |wITH Sauce .', 'assets/img/menu/chilli_garlic_fries.jpg', event)">
-                <img src="assets/img/menu/chilli_garlic_fries.jpg" class="menu-img" style="height: 68px;" alt="">
-                <div class="menu-content">
-                  <a href="#"> Chilli garlic fries </a><span>$8.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Potato strips deep fried |wITH Sauce
-              </div>
-              </div>
 
 
 
-                <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
-                onclick="showProductDetails('Paneer tikka (6 pcs) ', '$16.99', ' Paneer marinated in red spicy sauce .', 'assets/img/menu/paneer_tikka.jpeg', event)">
-                <img src="assets/img/menu/paneer_tikka.jpeg" class="menu-img" style="height: 68px;" alt="">
-                <div class="menu-content">
-                  <a href="#"> Paneer tikka (6 pcs) </a><span>$16.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Paneer marinated in red spicy
-                  sauce.
-              </div>
-              </div>
+                  <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
+                    onclick="showProductDetails('Chilli garlic fries', '$8.99', ' Potato strips deep fried |wITH Sauce .', 'assets/img/menu/chilli_garlic_fries.jpg', event)">
+                    <img src="assets/img/menu/chilli_garlic_fries.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Chilli garlic fries </a><span>$8.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Potato strips deep fried |wITH Sauce
+                    </div>
+                  </div>
 
 
-              <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
-              onclick="showProductDetails('Paneer 65 ', '$14.99', ' Tender fried paneer tossed in spiced bell  peppers and onions.', 'assets/img/menu/paneer65.jpg', event)">
-              <img src="assets/img/menu/paneer65.jpg" class="menu-img" style="height: 68px;" alt="">
-              <div class="menu-content">
-                <a href="#"> Paneer 65 </a><span>$14.99</span>
-              </div>
-              <div class="menu-ingredients">
-  
-                Tender fried paneer tossed in spiced bell
-                peppers and onions
-            </div>
-            </div>
+
+                  <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
+                    onclick="showProductDetails('Paneer tikka (6 pcs) ', '$16.99', ' Paneer marinated in red spicy sauce .', 'assets/img/menu/paneer_tikka.jpeg', event)">
+                    <img src="assets/img/menu/paneer_tikka.jpeg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Paneer tikka (6 pcs) </a><span>$16.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Paneer marinated in red spicy
+                      sauce.
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 menu-item filter-Starter_Veg   filter-vegetarian"
+                    onclick="showProductDetails('Paneer 65 ', '$14.99', ' Tender fried paneer tossed in spiced bell  peppers and onions.', 'assets/img/menu/paneer65.jpg', event)">
+                    <img src="assets/img/menu/paneer65.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Paneer 65 </a><span>$14.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+
+                      Tender fried paneer tossed in spiced bell
+                      peppers and onions
+                    </div>
+                  </div>
 
 
 
 
 
-                   
-                <!-- Veg Curries -->
 
-                   <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
+                  <!-- Veg Curries -->
+
+                  <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
                     onclick="showProductDetails('Daal Makhni', '$10.99', 'Daal simmered with tamarind and herbs,tampered with spices ', 'assets/img/menu/dal_makhni.jpg', event)">
                     <img src="assets/img/menu/dal_makhni.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
                       <a href="#">Daal Makhni</a><span>$10.99</span>
                     </div>
                     <div class="menu-ingredients">
-                      Daal simmered with tamarind and herbs, tampered with spices 
+                      Daal simmered with tamarind and herbs, tampered with spices
                     </div>
                   </div>
 
 
-                
+
                   <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
                     onclick="showProductDetails('Mix Veg Curry', '$9.99', ' Assorted vegetables cooked in a flavorful curry', 'assets/img/menu/3R(2)Mix_Veg_curry.jpeg', event)">
                     <img src="assets/img/menu/3R(2)Mix_Veg_curry.jpeg" class="menu-img" alt="">
@@ -1051,75 +1292,75 @@ cooked in tandoor
                       <a href="#">Mix Veg Curry</a><span>$9.99</span>
                     </div>
                     <div class="menu-ingredients">
-                     Assorted vegetables cooked in a flavorful curry
+                      Assorted vegetables cooked in a flavorful curry
                     </div>
                   </div>
 
 
                   <div class="col-lg-6 menu-item filter-Curries_Veg   filter-vegetarian"
-                  onclick="showProductDetails('Palak Paneer', '$11.99', 'Assorted vegetables cooked in a flavorful curry.', 'assets/img/menu/palak_paneer.jpg', event)">
-                  <img src="assets/img/menu/palak_paneer.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#"> Palak Paneer </a><span>$11.99</span>
+                    onclick="showProductDetails('Palak Paneer', '$11.99', 'Assorted vegetables cooked in a flavorful curry.', 'assets/img/menu/palak_paneer.jpg', event)">
+                    <img src="assets/img/menu/palak_paneer.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Palak Paneer </a><span>$11.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Assorted vegetables cooked in a flavorful curry.
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Assorted vegetables cooked in a flavorful curry.
-                </div>
-                </div>
 
-                <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
-                onclick="showProductDetails('Hyderabadi Chana Masala', '$9.99', ' Assorted vegetables cooked in a flavorful curry ', 'assets/img/menu/hyderabadi_chana_masala.jpg', event)">
-                <img src="assets/img/menu/hyderabadi_chana_masala.jpg" class="menu-img" style="height: 68px;"
-                  alt="">
-                <div class="menu-content">
-                  <a href="#">Hyderabadi Chana Masala</a><span>$9.99</span>
-                </div>
-                <div class="menu-ingredients">
-                  Assorted vegetables cooked in a flavorful curry 
-                </div>
-              </div>
+                  <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
+                    onclick="showProductDetails('Hyderabadi Chana Masala', '$9.99', ' Assorted vegetables cooked in a flavorful curry ', 'assets/img/menu/hyderabadi_chana_masala.jpg', event)">
+                    <img src="assets/img/menu/hyderabadi_chana_masala.jpg" class="menu-img" style="height: 68px;"
+                      alt="">
+                    <div class="menu-content">
+                      <a href="#">Hyderabadi Chana Masala</a><span>$9.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Assorted vegetables cooked in a flavorful curry
+                    </div>
+                  </div>
 
-              <div class="col-lg-6 menu-item filter-Curries_Veg   filter-vegetarian"
-              onclick="showProductDetails('Butter Paneer Masala', '$12.99', 'Deep fried to a golden perfection tossed in an aromatic spice.', 'assets/img/menu/butter_paneer_masala.jpg', event)">
-              <img src="assets/img/menu/butter_paneer_masala.jpg" class="menu-img" style="height: 68px;" alt="">
-              <div class="menu-content">
-                <a href="#"> Butter Paneer Masala</a><span>$12.99</span>
-              </div>
-              <div class="menu-ingredients">
-                Deep fried to a golden perfection tossed in an aromatic spice.
-              </div>
-            </div>
+                  <div class="col-lg-6 menu-item filter-Curries_Veg   filter-vegetarian"
+                    onclick="showProductDetails('Butter Paneer Masala', '$12.99', 'Deep fried to a golden perfection tossed in an aromatic spice.', 'assets/img/menu/butter_paneer_masala.jpg', event)">
+                    <img src="assets/img/menu/butter_paneer_masala.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Butter Paneer Masala</a><span>$12.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Deep fried to a golden perfection tossed in an aromatic spice.
+                    </div>
+                  </div>
 
-            <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
-            onclick="showProductDetails('Mirchi Ka Salan', '$5.99', ' MIRCHI KA SALAN Gravy made of peanuts, sesame and coconut slow cooked with green chillies ', 'assets/img/menu/mirchi_ka_salan.jpg', event)">
-            <img src="assets/img/menu/mirchi_ka_salan.jpg" class="menu-img" style="height: 68px;" alt="">
-            <div class="menu-content">
-              <a href="#">Mirchi Ka Salan</a><span>$5.99</span>
-            </div>
-            <div class="menu-ingredients">
-              MIRCHI KA SALAN Gravy made of peanuts, sesame and coconut slow cooked with green chillies 
-            </div>
-          </div>
+                  <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
+                    onclick="showProductDetails('Mirchi Ka Salan', '$5.99', ' MIRCHI KA SALAN Gravy made of peanuts, sesame and coconut slow cooked with green chillies ', 'assets/img/menu/mirchi_ka_salan.jpg', event)">
+                    <img src="assets/img/menu/mirchi_ka_salan.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Mirchi Ka Salan</a><span>$5.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      MIRCHI KA SALAN Gravy made of peanuts, sesame and coconut slow cooked with green chillies
+                    </div>
+                  </div>
 
-          <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
-          onclick="showProductDetails('Daal tadka', '$10.99', ' Minced Mixed Lentils Cooked With Tomato & Indian Spices ', 'assets/img/menu/dal_tadka.jpg', event)">
-          <img src="assets/img/menu/dal_tadka.jpg" class="menu-img" style="height: 68px;" alt="">
-          <div class="menu-content">
-            <a href="#">Daal tadka</a><span>$10.99</span>
-          </div>
-          <div class="menu-ingredients">
-            Minced Mixed Lentils Cooked With
-            Tomato & Indian Spices
-          </div>
-        </div>
+                  <div class="col-lg-6 menu-item filter-Curries_Veg filter-vegetarian"
+                    onclick="showProductDetails('Daal tadka', '$10.99', ' Minced Mixed Lentils Cooked With Tomato & Indian Spices ', 'assets/img/menu/dal_tadka.jpg', event)">
+                    <img src="assets/img/menu/dal_tadka.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Daal tadka</a><span>$10.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Minced Mixed Lentils Cooked With
+                      Tomato & Indian Spices
+                    </div>
+                  </div>
 
 
-                  
-
-     
 
 
-                 
+
+
+
+
 
                   <!-- Non-Veg Rice -->
                   <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
@@ -1154,7 +1395,8 @@ cooked in tandoor
                       <a href="#">Pakwan Special Chicken Dum Biryani</a><span>$29.99</span>
                     </div>
                     <div class="menu-ingredients">
-                      Serve for 2 - Combo of Chicken Dum Biryani, Chicken 65, Tandoori Roti (2 pcs), Mirchi Ka Salan, Dahi Ki Chutney
+                      Serve for 2 - Combo of Chicken Dum Biryani, Chicken 65, Tandoori Roti (2 pcs), Mirchi Ka Salan,
+                      Dahi Ki Chutney
                     </div>
                   </div>
 
@@ -1166,35 +1408,34 @@ cooked in tandoor
                       <a href="#">Pakwan Special Mutton Dum biryani</a><span>$39.99</span>
                     </div>
                     <div class="menu-ingredients">
-                     Serve for 2 - Combo of Mutton Dum Biryani, Chicken 65, Roti (2 pcs), Mirchi Ka Salan, Dahi Ki Chutney
+                      Serve for 2 - Combo of Mutton Dum Biryani, Chicken 65, Roti (2 pcs), Mirchi Ka Salan, Dahi Ki
+                      Chutney
                     </div>
                   </div>
 
 
                   <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
-                  onclick="showProductDetails('Chicken 65 biryani ', '$17.99', ' Delicious Chicken 65 biryani', 'assets/img/menu/chicken65_biryani.jpg', event)">
-                  <img src="assets/img/menu/chicken65_biryani.jpg" class="menu-img" style="height: 68px;"
-                    alt="">
-                  <div class="menu-content">
-                    <a href="#">Chicken 65 biryani  </a><span>$17.99</span>
+                    onclick="showProductDetails('Chicken 65 biryani ', '$17.99', ' Delicious Chicken 65 biryani', 'assets/img/menu/chicken65_biryani.jpg', event)">
+                    <img src="assets/img/menu/chicken65_biryani.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Chicken 65 biryani </a><span>$17.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Delicious Chicken 65 biryani
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                   Delicious Chicken 65 biryani
-                  </div>
-                </div>
 
 
-                <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
-                onclick="showProductDetails('Paneer biryani ', '$16.99', ' Delicious Paneer biryani', 'assets/img/menu/Paneer_Biryani.jpg', event)">
-                <img src="assets/img/menu/Paneer_Biryani.jpg" class="menu-img" style="height: 68px;"
-                  alt="">
-                <div class="menu-content">
-                  <a href="#">Paneer biryani  </a><span>$16.99</span>
-                </div>
-                <div class="menu-ingredients">
-                 Delicious Paneer biryani
-                </div>
-              </div>
+                  <div class="col-lg-6 menu-item filter-Rice_Nonveg filter-non-vegetarian"
+                    onclick="showProductDetails('Paneer biryani ', '$16.99', ' Delicious Paneer biryani', 'assets/img/menu/Paneer_Biryani.jpg', event)">
+                    <img src="assets/img/menu/Paneer_Biryani.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Paneer biryani </a><span>$16.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Delicious Paneer biryani
+                    </div>
+                  </div>
 
 
 
@@ -1265,15 +1506,15 @@ cooked in tandoor
 
 
                   <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
-                  onclick="showProductDetails(' Vegetable Soup', '$5.99', ' Tender Corn Kernels and Diced veg Simmered to a Soup.', 'assets/img/menu/Vegetable-Soup.webp', event)">
-                  <img src="assets/img/menu/Vegetable-Soup.webp" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#"> Vegetable Soup</a><span>$5.99</span>
+                    onclick="showProductDetails(' Vegetable Soup', '$5.99', ' Tender Corn Kernels and Diced veg Simmered to a Soup.', 'assets/img/menu/Vegetable-Soup.webp', event)">
+                    <img src="assets/img/menu/Vegetable-Soup.webp" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#"> Vegetable Soup</a><span>$5.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Tender Corn Kernels and Diced veg to a Soup.
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Tender Corn Kernels and Diced  veg to a Soup.
-                  </div>
-                </div>
 
                   <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
                     onclick="showProductDetails('Chicken Noodles', '$13.99', '  Noodles stir Fried with Veggies & Spices Egg,Chicken', 'assets/img/menu/5.(22)chicken_noodels.jpg', event)">
@@ -1287,15 +1528,15 @@ cooked in tandoor
                   </div>
 
                   <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
-                  onclick="showProductDetails('Veggie Noodles', '$11.99', '  Noodles stir Fried with Veggies Spices & Egg', 'assets/img/menu/noodles-veggies.jpg', event)">
-                  <img src="assets/img/menu/noodles-veggies.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Veggie Noodles</a><span>$11.99</span>
+                    onclick="showProductDetails('Veggie Noodles', '$11.99', '  Noodles stir Fried with Veggies Spices & Egg', 'assets/img/menu/noodles-veggies.jpg', event)">
+                    <img src="assets/img/menu/noodles-veggies.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Veggie Noodles</a><span>$11.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Noodles stir Fried with Veggies Spices & Egg
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Noodles stir Fried with Veggies Spices & Egg
-                  </div>
-                </div>
 
                   <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
                     onclick="showProductDetails('Chicken Fried Rice', '$13.99', ' Aromatic Rice stir Fried with fine Chopped Cabbage, Carrots, Bell Peppers & Egg,Chicken', 'assets/img/menu/5.(23)fried_rice.jpg', event)">
@@ -1310,15 +1551,15 @@ cooked in tandoor
 
 
                   <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
-                  onclick="showProductDetails('Veggie Fried Rice', '$11.99', ' Aromatic Rice stir Fried with fine Chopped Cabbage, Carrots, Bell Peppers & Egg', 'assets/img/menu/vegis_freid_rice.jpg', event)">
-                  <img src="assets/img/menu/vegis_freid_rice.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Veggie Fried Rice </a><span>$11.99</span>
+                    onclick="showProductDetails('Veggie Fried Rice', '$11.99', ' Aromatic Rice stir Fried with fine Chopped Cabbage, Carrots, Bell Peppers & Egg', 'assets/img/menu/vegis_freid_rice.jpg', event)">
+                    <img src="assets/img/menu/vegis_freid_rice.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Veggie Fried Rice </a><span>$11.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Aromatic Rice stir Fried with fine Chopped Cabbage, Carrots, Bell Peppers & Egg
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Aromatic Rice stir Fried with fine Chopped Cabbage, Carrots, Bell Peppers & Egg
-                  </div>
-                </div>
 
 
 
@@ -1335,7 +1576,7 @@ cooked in tandoor
                     </div>
                   </div>
 
-<!-- 
+                  <!-- 
 
                   
                   <div class="col-lg-6 menu-item filter-Chinese_work filter-non-vegetarian"
@@ -1352,12 +1593,12 @@ cooked in tandoor
                   </div> -->
 
 
-                 
-
-                  
 
 
-                 
+
+
+
+
 
                   <!-- Salads -->
 
@@ -1384,7 +1625,7 @@ cooked in tandoor
                   </div>
 
 
-                  
+
                   <div class="col-lg-6 menu-item filter-Salads filter-vegetarian"
                     onclick="showProductDetails('Plain Salads', '$3.99', ' Slice Onion, Cucumber, Carrot, Lettuce and Green Chilli ', 'assets/img/menu/plain_salads.webp', event)">
                     <img src="assets/img/menu/plain_salads.webp" class="menu-img" style="height: 68px;" alt="">
@@ -1392,21 +1633,21 @@ cooked in tandoor
                       <a href="#">Plain Salads</a><span>$3.99</span>
                     </div>
                     <div class="menu-ingredients">
-                      Slice Onion, Cucumber, Carrot, Lettuce and Green Chilli 
+                      Slice Onion, Cucumber, Carrot, Lettuce and Green Chilli
                     </div>
                   </div>
 
 
                   <div class="col-lg-6 menu-item filter-Salads filter-vegetarian"
-                  onclick="showProductDetails('Raita', '$2.99', 'Raita', 'assets/img/menu/Raita.jpg', event)">
-                  <img src="assets/img/menu/Raita.jpg" class="menu-img" style="height: 68px;" alt="">
-                  <div class="menu-content">
-                    <a href="#">Raita</a><span>$2.99</span>
+                    onclick="showProductDetails('Raita', '$2.99', 'Raita', 'assets/img/menu/Raita.jpg', event)">
+                    <img src="assets/img/menu/Raita.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Raita</a><span>$2.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Raita
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                    Raita
-                  </div>
-                </div>
 
 
 
@@ -1436,7 +1677,7 @@ cooked in tandoor
                     </div>
                   </div>
 
-                 
+
 
                   <!-- <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
                     onclick="showProductDetails('Shahidood Malai', '$5.99', '  Golden Crispy Bread cooked in Condensed Cardamom Floured Milk', 'assets/img/menu/6(30).shahidood_malai.JPG', event)">
@@ -1475,16 +1716,15 @@ cooked in tandoor
 
 
                   <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
-                  onclick="showProductDetails('Cream Fruit Salad', '$6.99', ' Mixed up fruits in heavy cream', 'assets/img/menu/fruit-salads.jpg', event)">
-                  <img src="assets/img/menu/fruit-salads.jpg" class="menu-img" style="height: 68px;"
-                    alt="">
-                  <div class="menu-content">
-                    <a href="#">Cream Fruit Salad</a><span>$6.99</span>
+                    onclick="showProductDetails('Cream Fruit Salad', '$6.99', ' Mixed up fruits in heavy cream', 'assets/img/menu/fruit-salads.jpg', event)">
+                    <img src="assets/img/menu/fruit-salads.jpg" class="menu-img" style="height: 68px;" alt="">
+                    <div class="menu-content">
+                      <a href="#">Cream Fruit Salad</a><span>$6.99</span>
+                    </div>
+                    <div class="menu-ingredients">
+                      Mixed up fruits in heavy cream
+                    </div>
                   </div>
-                  <div class="menu-ingredients">
-                   Mixed up fruits in heavy cream
-                  </div>
-                </div>
 
 
                   <div class="col-lg-6 menu-item filter-Desserts filter-vegetarian"
@@ -1496,7 +1736,7 @@ cooked in tandoor
                     <div class="menu-ingredients">
                       Dried Apricot Cooked in Sweet Syrup Garnished with Cream Custard and Nuts
                     </div>
-                  </div> 
+                  </div>
 
 
 
@@ -1561,13 +1801,12 @@ cooked in tandoor
 
                   <div class="col-lg-6 menu-item filter-Mocktail_shot filter-vegetarian"
                     onclick="showProductDetails('Mojito Jug', '$15.99', ' Any Flavour', 'assets/img/menu/mojito jug.jpg', event)">
-                    <img src="assets/img/menu/mojito jug.jpg" class="menu-img" style="height: 68px;"
-                      alt="">
+                    <img src="assets/img/menu/mojito jug.jpg" class="menu-img" style="height: 68px;" alt="">
                     <div class="menu-content">
                       <a href="#">Mojito Jug</a><span>$15.99</span>
                     </div>
                     <div class="menu-ingredients">
-                     Any Flavour
+                      Any Flavour
                     </div>
                   </div>
 
@@ -1658,7 +1897,7 @@ cooked in tandoor
                   </div>
 
 
-                  
+
                   <div class="col-lg-6 menu-item filter-Drinks filter-vegetarian"
                     onclick="showProductDetails('Mango Lassi', '$4.99', ' Fresh Mango Lassi  ', 'assets/img/menu/7R.mango-lassi-recipe.jfif', event)">
                     <img src="assets/img/menu/7R.mango-lassi-recipe.jfif" class="menu-img" style="height: 68px;" alt="">
@@ -1733,7 +1972,7 @@ cooked in tandoor
                     </div>
                   </div>
 
-             
+
 
                   <!-- <div class="col-lg-6 menu-item filter-Naan_paratha filter-vegetarian"
                     onclick="showProductDetails('Tawa Roti', '$2.99', ' Traditional Indian roti cooked on a Tawa', 'assets/img/menu/8.(42)Tawa_roti.webp', event)">
@@ -1781,64 +2020,64 @@ cooked in tandoor
     </div>
 
 
-    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
-      <div class="modal-dialog"  role="document">
-          <div class="modal-content">
-              <div class="modal-header ">
-                  <h2 class="modal-title" id="welcomeModalLabel" style="margin:  0 auto; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; " >Welcome !</h2>
-                  <button type="button" class="close" data-dismiss="modal" onclick="closeProductModal()"  aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <img src="./assets/img/gallery/pop-up.jpg" class="img-fluid" alt="Welcome Image" style="max-height: max-content;" width="100%" height="80vh">
-              </div>
-             
+    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ">
+            <h2 class="modal-title" id="welcomeModalLabel"
+              style="margin:  0 auto; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">
+              Welcome !</h2>
+            <button type="button" class="close" data-dismiss="modal" onclick="closeProductModal()" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-      </div>
-  </div>
+          <div class="modal-body">
+            <img src="./assets/img/gallery/pop-up.jpg" class="img-fluid" alt="Welcome Image"
+              style="max-height: max-content;" width="100%" height="80vh">
+          </div>
 
-  <style>
-    .modal-dialog-centered {
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .modal-dialog-centered {
         display: flex;
         align-items: center;
         min-height: 100vh;
-        
-    }
-    
-    #welcomeModal .modal-content  {
+
+      }
+
+      #welcomeModal .modal-content {
         width: 100%;
         max-width: 600px;
         margin-top: 10%;
-        margin-left: 15px; /* Adjust the max width as needed */
-    }
-    @media (max-width: 767.98px) {
+        margin-left: 15px;
+        /* Adjust the max width as needed */
+      }
+
+      @media (max-width: 767.98px) {
         .modal-dialog-centered {
-            min-height: calc(100vh - 1rem);
-            
+          min-height: calc(100vh - 1rem);
+
         }
       }
 
       @media (max-width: 1000px) {
-       #welcomeModal .modal-content {
+        #welcomeModal .modal-content {
           margin-top: 20%;
-            
+
         }
       }
 
       @media (max-width: 600px) {
-       #welcomeModal .modal-content {
+        #welcomeModal .modal-content {
           margin-top: 40%;
-            
+
         }
       }
-
-
-
-
-
-    
-</style>
+    </style>
 
 
 
@@ -1866,7 +2105,7 @@ cooked in tandoor
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hyderabadi Mutton haleem</a>
               </li>
-<!-- 
+              <!-- 
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Tawa Kaleji </a>
               </li>
@@ -2190,9 +2429,10 @@ cooked in tandoor
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Absolutely loved the food here! The flavors were authentic, 
-                  and every dish was perfectly cooked. From the rich curries to the freshly baked naan, 
-                  everything tasted amazing. The staff was friendly and attentive, making the dining experience even more enjoyable. 
+                  Absolutely loved the food here! The flavors were authentic,
+                  and every dish was perfectly cooked. From the rich curries to the freshly baked naan,
+                  everything tasted amazing. The staff was friendly and attentive, making the dining experience even
+                  more enjoyable.
                   Highly recommend this place for anyone craving delicious, authentic Indian cuisine!.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -2207,10 +2447,14 @@ cooked in tandoor
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  If you are looking for dum biryani or chicken 65, there would be none ither restaurant other than Pakwaan Express. 
-                  We Tried Pakwan Express and was absolutely impressed! Their mutton biryani was flavorful and perfectly cooked. 
-                  I like the quantity of mutton and and along with Chicken 65 had just the right amount of spice and crispiness. 
-                  The quality and taste were outstanding. If these dishes are anything to go by, I’m sure the rest of their menu is just as amazing. 
+                  If you are looking for dum biryani or chicken 65, there would be none ither restaurant other than
+                  Pakwaan Express.
+                  We Tried Pakwan Express and was absolutely impressed! Their mutton biryani was flavorful and perfectly
+                  cooked.
+                  I like the quantity of mutton and and along with Chicken 65 had just the right amount of spice and
+                  crispiness.
+                  The quality and taste were outstanding. If these dishes are anything to go by, I’m sure the rest of
+                  their menu is just as amazing.
                   Highly recommended!"
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -2225,11 +2469,15 @@ cooked in tandoor
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  As an Algerian who loves to travel and experience the culinary delights of different cultures, and as an avid food lover 😅🤭, 
-                  I recently had the pleasure of dining at Pakwan Express. The experience was truly phenomenal. The food was incredibly delicious, 
-                  perfect for those who enjoy well-spiced dishes. There was a great variety of dishes, impeccable cleanliness, and the staff were exceptionally welcoming and attentive.
-                   The interior of the restaurant is beautifully designed, combining modern décor with traditional cuisine. Thank you very much, Pakwan. 
-                   I wish you continued success and perseverance. I highly recommend trying it out. 🙏❤️
+                  As an Algerian who loves to travel and experience the culinary delights of different cultures, and as
+                  an avid food lover 😅🤭,
+                  I recently had the pleasure of dining at Pakwan Express. The experience was truly phenomenal. The food
+                  was incredibly delicious,
+                  perfect for those who enjoy well-spiced dishes. There was a great variety of dishes, impeccable
+                  cleanliness, and the staff were exceptionally welcoming and attentive.
+                  The interior of the restaurant is beautifully designed, combining modern décor with traditional
+                  cuisine. Thank you very much, Pakwan.
+                  I wish you continued success and perseverance. I highly recommend trying it out. 🙏❤️
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
 
@@ -2244,8 +2492,9 @@ cooked in tandoor
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Clean restaurant with tasty food, tried their vegetarian Manchurian and it was very good!
-                  The service was also very nice, offering to accommodate for my food and giving my son a balloon to play with 🎈.
-                  
+                  The service was also very nice, offering to accommodate for my food and giving my son a balloon to
+                  play with 🎈.
+
                   Definitely worth a try, one day I want to try their biriyani 😋
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -2260,14 +2509,18 @@ cooked in tandoor
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Finally after long time wait is finished for real authentic Hyderabadi Desi ghee Mutton & Chiken biryani. 
-                  We all friends enjoyed a Haleem and fish pakora with Biryani and don’t forget to taste Achari chicken with butter naan just wow 😮 and have a varieties of deserts after food duble ka Meetha,
-                   fruit salad 😋 or opt for Irani chai ☕️ and the staff is very attentive and polite with multiple language service English French Arabic Hindi Telugu etc…..
-                   Thanks to Pakwan express team for getting the joy back of real Indian food in Canada Montreal 🇨🇦. Highly recommended.
-                    Can’t wait to visit again with family & friends 🔜👍
+                  Finally after long time wait is finished for real authentic Hyderabadi Desi ghee Mutton & Chiken
+                  biryani.
+                  We all friends enjoyed a Haleem and fish pakora with Biryani and don’t forget to taste Achari chicken
+                  with butter naan just wow 😮 and have a varieties of deserts after food duble ka Meetha,
+                  fruit salad 😋 or opt for Irani chai ☕️ and the staff is very attentive and polite with multiple
+                  language service English French Arabic Hindi Telugu etc…..
+                  Thanks to Pakwan express team for getting the joy back of real Indian food in Canada Montreal 🇨🇦.
+                  Highly recommended.
+                  Can’t wait to visit again with family & friends 🔜👍
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-<!-- 
+                <!-- 
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
                 <h3>syed abrar</h3>
                 <!-- <h4>Entrepreneur</h4> -->
@@ -2446,9 +2699,10 @@ cooked in tandoor
 
       <div data-aos="fade-up">
         <iframe style="border:0; width: 100%; height: 350px;"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.1841251195706!2d-73.6243381!3d45.526500199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919561d7d865f%3A0xc74dbce77fa697!2sPakwan%20Express!5e0!3m2!1sen!2sin!4v1717415398777!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.1841251195706!2d-73.6243381!3d45.526500199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919561d7d865f%3A0xc74dbce77fa697!2sPakwan%20Express!5e0!3m2!1sen!2sin!4v1717415398777!5m2!1sen!2sin"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+          referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="container" data-aos="fade-up">
@@ -2541,12 +2795,14 @@ cooked in tandoor
 
           </p> -->
               <div class="social-links mt-3">
-                <a href="https://www.facebook.com/profile.php?id=61558668633381" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/pakwanexpressmontreal/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61558668633381" target="_blank" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/pakwanexpressmontreal/" target="_blank" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
                 <!-- <a href="https://wa.me/+15142700050" target="_blank" class="whatsapp"><i
                     class="bx bxl-whatsapp"></i></a> -->
-                    <a href="https://wa.me/message/XYSI36YD6WKEO1" target="_blank" class="whatsapp"><i
-                      class="bx bxl-whatsapp"></i></a>
+                <a href="https://wa.me/message/XYSI36YD6WKEO1" target="_blank" class="whatsapp"><i
+                    class="bx bxl-whatsapp"></i></a>
 
               </div>
 
@@ -2589,7 +2845,7 @@ cooked in tandoor
     </div>
   </footer><!-- End Footer -->
 
-<!--   <div id="preloader"></div>
+  <!--   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a> -->
 
@@ -2740,28 +2996,28 @@ cooked in tandoor
       }
     }
   </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCFBTCVMTT">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCFBTCVMTT">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-NCFBTCVMTT');
-</script>
+    gtag('config', 'G-NCFBTCVMTT');
+  </script>
 
-<script>
-  //$(document).ready(function() {
-      // Show the modal on every visit
-   //   $('#welcomeModal').modal('show');
+  <script>
+    //$(document).ready(function() {
+    // Show the modal on every visit
+    //   $('#welcomeModal').modal('show');
 
-      // Optional: Clear the 'visited' flag when the modal is closed
-  //    $('#welcomeModal').on('hidden.bs.modal', function () {
-   //       localStorage.removeItem('visited');
- //     });
- // });
-</script>
+    // Optional: Clear the 'visited' flag when the modal is closed
+    //    $('#welcomeModal').on('hidden.bs.modal', function () {
+    //       localStorage.removeItem('visited');
+    //     });
+    // });
+  </script>
 
 
 </body>
